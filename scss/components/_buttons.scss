@@ -1,0 +1,55 @@
+// ---------- Button styles ---------- //
+
+button,
+input[type=button],
+a {
+    border: 0;
+    &.btn {
+        border: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    position: relative;
+    overflow: hidden;
+    font-family: $font-default;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    color: $white;
+    background: $red;
+    transition: .3s ease-in-out;
+    @include hover {
+        background: $darkRed;
+    }
+    > span {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background: $white;
+        pointer-events: none;
+        border-radius: 50%;
+        animation: ripple .3s linear;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: .3;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.btn-white {
+    background: $white;
+    color: $red;
+}

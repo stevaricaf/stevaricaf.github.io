@@ -19,5 +19,12 @@ let app = {
 };
 
 $(function() {
+	
 	app.init();
+
+	AOS.init({
+		duration: 300,
+		easing: 'ease-in-out'
+	});
+
 });

@@ -24,11 +24,13 @@
 
 // ---------- Plugins ---------- //
 
-// @import 'plugins/plugin-name';
+@import 'plugins/aos/aos',
+        'plugins/swiper/swiper';
 
 // ---------- Components ---------- //
 
-// @import 'components/component-name';
+@import 'components/buttons',
+        'components/inputs';
 
 // ---------- Layout ---------- //
 
