@@ -60,5 +60,6 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  }
+  },
+  "sasslintConfig": "sass-lint.yml"
 }

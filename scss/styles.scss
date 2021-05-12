@@ -1,0 +1,39 @@
+// ---------- Config ---------- //
+
+@import 'config/reset',
+        'config/variables';
+
+// ---------- Fonts ---------- //
+
+@import 'fonts/fonts',
+        'fonts/iconfont';
+
+// ---------- Helpers ---------- //
+
+@import 'helpers/mixins',
+        'helpers/helpers';
+
+// ---------- Global ---------- //
+
+@import 'global/global',
+        'global/typography';
+
+// ---------- Libs ---------- //
+
+// @import 'libs/lib-name';
+
+// ---------- Plugins ---------- //
+
+// @import 'plugins/plugin-name';
+
+// ---------- Components ---------- //
+
+// @import 'components/component-name';
+
+// ---------- Layout ---------- //
+
+// @import 'partials/layout/layout-name';
+
+// ---------- Modules ---------- //
+
+// @import 'partials/modules/module-name';

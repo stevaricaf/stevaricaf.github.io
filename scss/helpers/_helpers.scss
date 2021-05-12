@@ -1,0 +1,26 @@
+// ---------- Helpers ---------- //
+
+%clearfix {
+	&::before,
+	&::after {
+		content: '';
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+.clearfix {
+	@extend %clearfix;
+}
+
+%cover-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cover-bg {
+	@extend %cover-bg;
+}

@@ -1,0 +1,31 @@
+// ---------- Global styles ---------- //
+
+body {
+    background: $bg;
+    font-family: $font-default;
+    font-size: 14px;
+    font-weight: 400;
+    color: $nero;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.wrapper {
+    @extend %clearfix;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
