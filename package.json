@@ -1,0 +1,36 @@
+{
+  "name": "stevaricaf_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website that will show my individual Front-End Development skills",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevaricaf/stevaricaf.github.io.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "SCSS",
+    "JavaScript",
+    "jQuery",
+    "Node",
+    "npm",
+    "gulp",
+    "portfolio",
+    "website",
+    "single-page",
+    "skills",
+    "front-end",
+    "development"
+  ],
+  "author": "Stevan Stojic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevaricaf/stevaricaf.github.io/issues"
+  },
+  "homepage": "https://github.com/stevaricaf/stevaricaf.github.io#readme"
+}
