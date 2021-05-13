@@ -12,8 +12,11 @@ let app = {
 			$('html').addClass('no-touch');
 		}
 
-		// Call your functions here
-		// functions.functionName();
+		// Components functions
+		functions.rippleButton();
+
+		// Interactive functions
+		functions.stickyHeader();
 
 	}
 };

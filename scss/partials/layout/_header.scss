@@ -1,0 +1,134 @@
+// ---------- Header styles ---------- //
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    transition: .3s ease-in-out;
+    &.header--sticky {
+        position: fixed;
+        background: $nero;
+        box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+        .header__wrapper {
+            padding: 20px 40px;
+        }
+        .logo {
+            h3 {
+                font-size: 32px;
+            }
+        }
+        .menu,
+        .nav  {
+            margin-top: 12px;
+        }
+    }
+}
+
+.header__wrapper {
+    padding: 40px;
+    transition: .3s ease-in-out;
+}
+
+.logo {
+    float: left;
+    h3 {
+        font-weight: 700;
+        transition: .3s ease-in-out;
+        span {
+            color: $red;
+        }
+    }
+    @include hover {
+        h3 {
+            color: $red;
+        }
+    }
+}
+
+.menu {
+    width: 24px;
+    height: 18px;
+    display: block;
+    float: right;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1001;
+    background: transparent;
+    transition: .3s ease-in-out;
+    .menu__line {
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $white;
+        border-radius: 5px;
+        transition: .3s ease-in-out;
+        &:nth-of-type(2) {
+            @include align(absolute, y);
+        }
+        &:last-of-type {
+            top: auto;
+            bottom: 0;
+        }
+        &.active {
+            @include align(absolute, y);
+            transform: rotate(45deg);
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+            &:last-of-type {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    @include breakpoint(desktop) {
+        display: none;
+    }
+}
+
+.nav {
+    float: right;
+    margin-top: 14px;
+    transition: .3s ease-in-out;
+    .nav__list {
+        @extend %clearfix;
+        .nav__list-item {
+            float: left;
+            position: relative;
+            margin: 0 15px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            .nav__list-item-link {
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $white;
+                transition: .3s ease-in-out;
+                &::after {
+                    @include align(absolute, x);
+                    bottom: -7px;
+                    content: '';
+                    width: 0;
+                    opacity: 0;
+                    height: 2px;
+                    display: block;
+                    background: transparent;
+                    transition: .3s ease-in-out;
+                }
+                @include hover {
+                    color: $red;
+                    &::after {
+                        width: calc(100% + 16px);
+                        opacity: 1;
+                        background: $red;
+                    }
+                }
+            }
+        }
+    }
+}

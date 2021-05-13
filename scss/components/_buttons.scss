@@ -26,7 +26,7 @@ a {
     @include hover {
         background: $darkRed;
     }
-    > span {
+    .btn__ripple {
         position: absolute;
         transform: translate(-50%, -50%);
         background: $white;

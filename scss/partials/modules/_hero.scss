@@ -1,0 +1,55 @@
+// ---------- Hero styles ---------- //
+
+.hero {
+    @extend %cover-bg;
+    height: 100vh;
+    @supports (background-attachment: fixed) {
+        background-attachment: fixed;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        opacity: .75;
+        background: $black;
+    }
+}
+
+.hero__wrapper {
+    height: 100%;
+}
+
+.hero__content {
+    @include align(relative, xy);
+    z-index: 1;
+    text-align: center;
+    > h1 {
+        margin-top: 25px;
+    }
+    > h5,
+    > p {
+        color: $white;
+    }
+    > h5 {
+        font-weight: 500;
+    }
+    > p {
+        max-width: 550px;
+        margin: 23px auto 0;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        span {
+            font-weight: 600;
+            color: $red;
+        }
+    }
+    .hero__landing-btn {
+        margin-top: 32px;
+    }
+}

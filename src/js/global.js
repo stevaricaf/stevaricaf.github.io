@@ -9817,7 +9817,28 @@
   1: [function (require, module, exports) {
     'use strict';
 
-    module.exports = {};
+    module.exports = {
+      rippleButton: function rippleButton() {
+        $('.btn').on('click', function (item) {
+          $(this).append('<span class="btn__ripple"></span>');
+          var top = $(window).scrollTop() - $(this).offset().top + item.clientY;
+          var left = $(window).scrollTop() - $(this).offset().left + item.clientX;
+          $(this).children('span').css({
+            top: top,
+            left: left
+          });
+        });
+      },
+      stickyHeader: function stickyHeader() {
+        $(window).on('scroll', function () {
+          if ($(window).scrollTop() > 0) {
+            $('.header').addClass('header--sticky');
+          } else {
+            $('.header').removeClass('header--sticky');
+          }
+        });
+      }
+    };
   }, {}],
   2: [function (require, module, exports) {
     'use strict';
@@ -9831,6 +9852,9 @@
         } else {
           $('html').addClass('no-touch');
         }
+
+        functions.rippleButton();
+        functions.stickyHeader();
       }
     };
     $(function () {
