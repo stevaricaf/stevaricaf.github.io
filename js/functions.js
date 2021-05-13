@@ -8,7 +8,7 @@ module.exports = {
             $(this).append('<span class="btn__ripple"></span>');
 
             let top = $(window).scrollTop() - $(this).offset().top + item.clientY;
-            let left = $(window).scrollTop() - $(this).offset().left + item.clientX;
+            let left = $(window).scrollLeft() - $(this).offset().left + item.clientX;
 
             $(this).children('span').css({
                 top: top,

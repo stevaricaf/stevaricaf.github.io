@@ -9822,7 +9822,7 @@
         $('.btn').on('click', function (item) {
           $(this).append('<span class="btn__ripple"></span>');
           var top = $(window).scrollTop() - $(this).offset().top + item.clientY;
-          var left = $(window).scrollTop() - $(this).offset().left + item.clientX;
+          var left = $(window).scrollLeft() - $(this).offset().left + item.clientX;
           $(this).children('span').css({
             top: top,
             left: left
