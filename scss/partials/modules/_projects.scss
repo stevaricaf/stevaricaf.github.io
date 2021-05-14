@@ -1,0 +1,129 @@
+// ---------- Services styles ---------- //
+
+.projects__wrapper {
+    padding: 80px 20px 60px;
+}
+
+.projects__subpar {
+    width: 100%;
+    max-width: 800px;
+    margin: 27px auto 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.projects__filters {
+    @extend %clearfix;
+    display: inline-block;
+    margin-top: 47px;
+}
+
+.projects__filters-filter {
+    float: left;
+    margin: 0 10px;
+    padding: 5px 18px;
+    font-size: 12px;
+    font-weight: 500;
+    color: $nero;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background: $white;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    @include hover {
+        background: $red;
+        color: $white;
+    }
+    &.active {
+        background: $red;
+        color: $white;
+    }
+}
+
+.projects__images {
+    @extend %clearfix;
+    margin-top: 27px;
+}
+
+.projects__images-image {
+    width: calc(33.33% - 40px);
+    height: 350px;
+    margin: 20px;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    overflow: hidden;
+    .projects__images-image-img {
+        height: 100%;
+        object-fit: cover;
+        transition: .3s ease-in-out;
+    }
+    &:nth-of-type(4) {
+        width: calc(50% - 40px);
+        height: 500px;
+    }
+    &:nth-of-type(5) {
+        width: calc(50% - 40px);
+        height: 500px;
+    }
+    @include hover {
+        .projects__images-image-img {
+            transform: scale(1.15);
+        }
+        .projects__images-image-data {
+            left: 0;
+        }
+    }
+    &.filtered {
+        width: calc(33.33% - 40px);
+        height: 350px;
+    }
+}
+
+.projects__images-image-data {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    background: rgba($color: ($black), $alpha: .75);
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+    > h5 {
+        margin: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: none;
+        color: $white;
+    }
+    .icon {
+        font-size: 25px;
+        color: $white;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    .font-icon-heart {
+        position: absolute;
+        left: 25px;
+        bottom: 20px;
+        @include hover {
+            color: $red;
+        }
+        &.active {
+            color: $red;
+        }
+    }
+    .font-icon-zoom {
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        @include hover {
+            color: $green;
+        }
+    }
+}

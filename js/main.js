@@ -14,9 +14,9 @@ let app = {
 
 		// Components functions
 		functions.rippleButton();
-
-		// Interactive functions
 		functions.stickyHeader();
+		functions.filterProjects();
+		functions.heartClick();
 
 	}
 };

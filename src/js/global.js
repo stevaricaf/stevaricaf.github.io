@@ -9837,6 +9837,26 @@
             $('.header').removeClass('header--sticky');
           }
         });
+      },
+      filterProjects: function filterProjects() {
+        $('.projects__filters-filter').on('click', function () {
+          var value = $(this).attr('data-filter');
+
+          if (value == 'all' && $('.projects__images-image').hasClass('filtered')) {
+            $('.projects__images-image').removeClass('filtered').show(300);
+          } else {
+            $('.projects__images-image').not('[data-filter=' + value + ']').hide(300);
+            $('.projects__images-image').filter('[data-filter=' + value + ']').addClass('filtered').show(300);
+          }
+        });
+        $('.projects__filters-filter').on('click', function () {
+          $(this).addClass('active').siblings().removeClass('active');
+        });
+      },
+      heartClick: function heartClick() {
+        $('.font-icon-heart').on('click', function () {
+          $(this).toggleClass('active');
+        });
       }
     };
   }, {}],
@@ -9855,6 +9875,8 @@
 
         functions.rippleButton();
         functions.stickyHeader();
+        functions.filterProjects();
+        functions.heartClick();
       }
     };
     $(function () {
