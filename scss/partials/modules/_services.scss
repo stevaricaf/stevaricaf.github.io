@@ -1,0 +1,62 @@
+// ---------- Services styles ---------- //
+
+.services__wrapper {
+    padding: 80px 20px;
+}
+
+.services__cards {
+    @extend %clearfix;
+    margin-top: 80px;
+    * {
+        text-align: center;
+    }
+}
+
+.services__cards-card {
+    width: calc(25% - 40px);
+    margin: 0 20px;
+    padding: 30px 20px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    background: $white;
+    transition: .3s ease-in-out;
+    > h5 {
+        margin-top: 30px;
+    }
+    > p {
+        margin-top: 27px;
+        line-height: 24px;
+    }
+    @include hover {
+        transform: scale(1.1);
+        .services__cards-card-rectangle {
+            border-color: $silver;
+            background: $red;
+            .icon {
+                color: $white;
+            }
+        }
+    }
+}
+
+.services__cards-card-rectangle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    border: 8px solid $red;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    .icon {
+        @include align(absolute, xy);
+        top: calc(50% + 4px);
+        font-size: 40px;
+        color: $nero;
+        transition: .3s ease-in-out;
+    }
+}
+
+.services__cards-card-btn {
+    margin-top: 26px;
+}
