@@ -17,12 +17,36 @@ body {
     margin: 0 auto;
     padding: 80px 40px;
     position: relative;
+    text-align: center;
+    * {
+        text-align: left;
+    }
 }
 
 .container {
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+.heading {
+    display: inline-block;
+    position: relative;
+    h5 {
+        color: $red;
+    }
+    h2 {
+        margin-top: 10px;
+    }
+}
+
+.dots-bg {
+    width: 100%;
+    max-width: 185px;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
 }
 
 img {

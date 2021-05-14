@@ -22,12 +22,14 @@
 
 .hero__wrapper {
     height: 100%;
+    * {
+        text-align: center;
+    }
 }
 
 .hero__content {
     @include align(relative, xy);
     z-index: 1;
-    text-align: center;
     > h1 {
         margin-top: 25px;
     }

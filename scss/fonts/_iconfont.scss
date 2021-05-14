@@ -24,6 +24,82 @@
 @function font-char($filename) {
 	$char: "";
 
+	@if $filename == icon-briefcase {
+		$char: "\E001";
+	}
+	@if $filename == icon-check {
+		$char: "\E002";
+	}
+	@if $filename == icon-clock {
+		$char: "\E003";
+	}
+	@if $filename == icon-close {
+		$char: "\E004";
+	}
+	@if $filename == icon-css {
+		$char: "\E005";
+	}
+	@if $filename == icon-customer {
+		$char: "\E006";
+	}
+	@if $filename == icon-dashboard {
+		$char: "\E007";
+	}
+	@if $filename == icon-email {
+		$char: "\E008";
+	}
+	@if $filename == icon-exclamation-mark {
+		$char: "\E009";
+	}
+	@if $filename == icon-facebook {
+		$char: "\E00A";
+	}
+	@if $filename == icon-gulp {
+		$char: "\E00B";
+	}
+	@if $filename == icon-heart {
+		$char: "\E00C";
+	}
+	@if $filename == icon-html {
+		$char: "\E00D";
+	}
+	@if $filename == icon-instagram {
+		$char: "\E00E";
+	}
+	@if $filename == icon-js {
+		$char: "\E00F";
+	}
+	@if $filename == icon-left {
+		$char: "\E010";
+	}
+	@if $filename == icon-patent {
+		$char: "\E011";
+	}
+	@if $filename == icon-pen {
+		$char: "\E012";
+	}
+	@if $filename == icon-responsive {
+		$char: "\E013";
+	}
+	@if $filename == icon-right {
+		$char: "\E014";
+	}
+	@if $filename == icon-settings {
+		$char: "\E015";
+	}
+	@if $filename == icon-user {
+		$char: "\E016";
+	}
+	@if $filename == icon-webpack {
+		$char: "\E017";
+	}
+	@if $filename == icon-youtube {
+		$char: "\E018";
+	}
+	@if $filename == icon-zoom {
+		$char: "\E019";
+	}
+
 	@return $char;
 }
 
@@ -37,3 +113,80 @@
 		content: font-char($filename);
 	}
 }
+
+.font-icon-briefcase {
+	@include font(icon-briefcase);
+}
+.font-icon-check {
+	@include font(icon-check);
+}
+.font-icon-clock {
+	@include font(icon-clock);
+}
+.font-icon-close {
+	@include font(icon-close);
+}
+.font-icon-css {
+	@include font(icon-css);
+}
+.font-icon-customer {
+	@include font(icon-customer);
+}
+.font-icon-dashboard {
+	@include font(icon-dashboard);
+}
+.font-icon-email {
+	@include font(icon-email);
+}
+.font-icon-exclamation-mark {
+	@include font(icon-exclamation-mark);
+}
+.font-icon-facebook {
+	@include font(icon-facebook);
+}
+.font-icon-gulp {
+	@include font(icon-gulp);
+}
+.font-icon-heart {
+	@include font(icon-heart);
+}
+.font-icon-html {
+	@include font(icon-html);
+}
+.font-icon-instagram {
+	@include font(icon-instagram);
+}
+.font-icon-js {
+	@include font(icon-js);
+}
+.font-icon-left {
+	@include font(icon-left);
+}
+.font-icon-patent {
+	@include font(icon-patent);
+}
+.font-icon-pen {
+	@include font(icon-pen);
+}
+.font-icon-responsive {
+	@include font(icon-responsive);
+}
+.font-icon-right {
+	@include font(icon-right);
+}
+.font-icon-settings {
+	@include font(icon-settings);
+}
+.font-icon-user {
+	@include font(icon-user);
+}
+.font-icon-webpack {
+	@include font(icon-webpack);
+}
+.font-icon-youtube {
+	@include font(icon-youtube);
+}
+.font-icon-zoom {
+	@include font(icon-zoom);
+}
+

@@ -1,0 +1,336 @@
+// ---------- About styles ---------- //
+
+.about__content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal {
+    width: 100%;
+    max-width: 570px;
+    padding: 40px;
+    padding-right: 80px;
+    position: relative;
+    text-align: left;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+}
+
+.personal__info {
+    margin-top: 50px;
+    h5 {
+        margin-top: 15px;
+        font-size: 16px;
+        text-transform: none;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.personal__pars {
+    margin-top: 47px;
+    line-height: 24px;
+    p {
+        margin-top: 18px;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.personal__btn {
+    margin-top: 47px;
+}
+
+.personal__dots-bg {
+    left: -40px;
+    bottom: -40px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    margin-left: -40px;
+    position: relative;
+    text-align: left;
+    background: $red;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    > h4 {
+        color: $white;
+    }
+}
+
+.skills__card {
+    width: 100%;
+    height: 61px;
+    margin-top: 25px;
+    padding: 5px;
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    &:first-of-type {
+        margin-top: 49px;
+    }
+    &:nth-of-type(2) {
+        .skills__card-line {
+            width: 80%;
+        }
+    }
+    &:nth-of-type(3) {
+        .skills__card-upper-left {
+            .icon {
+                margin-top: 6px;
+                margin-bottom: -3px;
+                margin-left: 6px;
+                font-size: 30px;
+            }
+            h5 {
+                margin-left: 12px;
+            }
+        }
+        .skills__card-line {
+            width: 65%;
+        }
+    }
+    &:last-of-type {
+        .skills__card-upper-left {
+            .icon {
+                margin-left: 15px;
+            }
+            h5 {
+                margin-left: 20px;
+            }
+        }
+        .skills__card-line {
+            width: 75%;
+        }
+    }
+}
+
+.skills__card-upper {
+    @extend %clearfix;
+}
+
+.skills__card-upper-left {
+    @extend %clearfix;
+    float: left;
+    .icon {
+        float: left;
+        margin-top: 9px;
+        margin-left: 9px;
+        font-size: 25px;
+        color: $red;
+    }
+    h5 {
+        float: left;
+        margin-top: 14px;
+        margin-left: 14px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.skills__card-upper-percentage {
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.skills__card-line {
+    width: 90%;
+    height: 6px;
+    display: block;
+    margin-top: 4px;
+    background: $red;
+    border-radius: 5px;
+}
+
+.skills__btn {
+    margin-top: 50px;
+}
+
+.skills__dots-bg {
+    right: -40px;
+    top: -40px;
+}
+
+// .about__wrapper {
+//     text-align: center;
+// }
+
+// .about__heading {
+//     &::before {
+//         content: 'About';
+//     }
+// }
+
+// .about__content {
+//     margin-top: 60px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .personal {
+//     width: 100%;
+//     max-width: 570px;
+//     padding: 40px 80px 40px 40px;
+//     position: relative;
+//     text-align: left;
+//     background: $white;
+//     border-radius: 5px;
+//     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+// }
+
+// .personal__info {
+//     margin-top: 50px;
+//     h5 {
+//         margin-top: 15px;
+//         font-size: 16px;
+//         text-transform: none;
+//         &:first-of-type {
+//             margin-top: 0;
+//         }
+//         span {
+//             font-weight: 400;
+//         }
+//     }
+// }
+
+// .personal__pars {
+//     margin-top: 47px;
+//     line-height: 24px;
+//     p {
+//         margin-top: 18px;
+//         &:first-of-type {
+//             margin-top: 0;
+//         }
+//     }
+// }
+
+// .personal__btn {
+//     margin-top: 47px;
+// }
+
+// .personal__dots-bg {
+//     left: -40px;
+//     bottom: -40px;
+// }
+
+// .skills {
+//     width: 100%;
+//     max-width: 440px;
+//     margin-left: -40px;
+//     padding: 40px;
+//     position: relative;
+//     text-align: left;
+//     background: $red;
+//     border-radius: 5px;
+//     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+//     > h4 {
+//         color: $white;
+//     }
+// }
+
+// .skills__card {
+//     width: 100%;
+//     height: 61px;
+//     margin-top: 25px;
+//     position: relative;
+//     background: $white;
+//     border-radius: 5px;
+//     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+//     &:first-of-type {
+//         margin-top: 50px;
+//     }
+//     .skills__card-upper {
+//         @extend %clearfix;
+//         .skills__card-upper-left {
+//             margin: 14px;
+//             .icon {
+//                 float: left;
+//                 font-size: 25px;
+//                 color: $red;
+//             }
+//             h5 {
+//                 float: left;
+//                 margin: 5px 14px;
+//                 font-size: 15px;
+//                 font-weight: 500;
+//             }
+//         }
+//     }
+//     &:nth-of-type(2) {
+//         .skills__card-line {
+//             width: calc(80% - 10px);
+//         }
+//     }
+//     &:nth-of-type(3) {
+//         .skills__card-upper-left {
+//             margin: 11px;
+//             .icon {
+//                 font-size: 30px;
+//             }
+//             h5 {
+//                 margin: 8px 11px;
+//             }
+//         }
+//         .skills__card-line {
+//             width: calc(65% - 10px);
+//         }
+//     }
+//     &:last-of-type {
+//         .skills__card-upper-left {
+//             margin-left: 10px;
+//             .icon {
+//                 margin-left: 10px;
+//             }
+//             h5 {
+//                 margin-left: 21px;
+//             }
+//         }
+//         .skills__card-line {
+//             width: calc(75% - 10px);
+//         }
+//     }
+// }
+
+// .skills__card-upper-percentage {
+//     position: absolute;
+//     right: 15px;
+//     top: 19px;
+//     font-size: 15px;
+//     font-weight: 500;
+// }
+
+// .skills__card-line {
+//     width: calc(90% - 10px);
+//     height: 6px;
+//     display: block;
+//     position: absolute;
+//     bottom: 5px;
+//     left: 5px;
+//     background: $red;
+//     border-radius: 5px;
+// }
+
+// .skills__btn {
+//     margin-top: 50px;
+// }
+
+// .skills__dots-bg {
+//     right: -40px;
+//     top: -40px;
+// }

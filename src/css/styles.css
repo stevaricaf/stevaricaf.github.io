@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -113,12 +114,123 @@ input[type=button] {
     src: url("../../../assets/fonts/dist/flat-icon.woff2") format("woff2"), url("../../../assets/fonts/dist/flat-icon.woff") format("woff"), url("../../../assets/fonts/dist/flat-icon.ttf") format("truetype");
 }
 
-.clearfix::before, .wrapper::before, .nav .nav__list::before, .clearfix::after, .wrapper::after, .nav .nav__list::after {
+.font-icon-briefcase:before, .font-icon-check:before, .font-icon-clock:before, .font-icon-close:before, .font-icon-css:before, .font-icon-customer:before, .font-icon-dashboard:before, .font-icon-email:before, .font-icon-exclamation-mark:before, .font-icon-facebook:before, .font-icon-gulp:before, .font-icon-heart:before, .font-icon-html:before, .font-icon-instagram:before, .font-icon-js:before, .font-icon-left:before, .font-icon-patent:before, .font-icon-pen:before, .font-icon-responsive:before, .font-icon-right:before, .font-icon-settings:before, .font-icon-user:before, .font-icon-webpack:before, .font-icon-youtube:before, .font-icon-zoom:before {
+    font-family: 'flat-icon';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.font-icon-briefcase:before {
+    content: "";
+}
+
+.font-icon-check:before {
+    content: "";
+}
+
+.font-icon-clock:before {
+    content: "";
+}
+
+.font-icon-close:before {
+    content: "";
+}
+
+.font-icon-css:before {
+    content: "";
+}
+
+.font-icon-customer:before {
+    content: "";
+}
+
+.font-icon-dashboard:before {
+    content: "";
+}
+
+.font-icon-email:before {
+    content: "";
+}
+
+.font-icon-exclamation-mark:before {
+    content: "";
+}
+
+.font-icon-facebook:before {
+    content: "";
+}
+
+.font-icon-gulp:before {
+    content: "";
+}
+
+.font-icon-heart:before {
+    content: "";
+}
+
+.font-icon-html:before {
+    content: "";
+}
+
+.font-icon-instagram:before {
+    content: "";
+}
+
+.font-icon-js:before {
+    content: "";
+}
+
+.font-icon-left:before {
+    content: "";
+}
+
+.font-icon-patent:before {
+    content: "";
+}
+
+.font-icon-pen:before {
+    content: "";
+}
+
+.font-icon-responsive:before {
+    content: "";
+}
+
+.font-icon-right:before {
+    content: "";
+}
+
+.font-icon-settings:before {
+    content: "";
+}
+
+.font-icon-user:before {
+    content: "";
+}
+
+.font-icon-webpack:before {
+    content: "";
+}
+
+.font-icon-youtube:before {
+    content: "";
+}
+
+.font-icon-zoom:before {
+    content: "";
+}
+
+.clearfix::before, .wrapper::before, .nav .nav__list::before, .skills__card-upper::before, .skills__card-upper-left::before, .clearfix::after, .wrapper::after, .nav .nav__list::after, .skills__card-upper::after, .skills__card-upper-left::after {
     content: '';
     display: table;
 }
 
-.clearfix::after, .wrapper::after, .nav .nav__list::after {
+.clearfix::after, .wrapper::after, .nav .nav__list::after, .skills__card-upper::after, .skills__card-upper-left::after {
     clear: both;
 }
 
@@ -144,12 +256,42 @@ body {
     margin: 0 auto;
     padding: 80px 40px;
     position: relative;
+    text-align: center;
+}
+
+.wrapper * {
+    text-align: left;
 }
 
 .container {
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+.heading {
+    display: inline-block;
+    position: relative;
+}
+
+.heading h5 {
+    color: #f50057;
+}
+
+.heading h2 {
+    margin-top: 10px;
+}
+
+.dots-bg {
+    width: 100%;
+    max-width: 185px;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 img {
@@ -205,7 +347,6 @@ p {
     font-size: 14px;
     font-weight: 400;
     color: #404040;
-    line-height: normal;
     text-align: left;
 }
 
@@ -2186,6 +2327,7 @@ a.btn {
     padding: 13px 25px;
     position: relative;
     overflow: hidden;
+    vertical-align: bottom;
     font-family: "EncodeSans";
     font-size: 14px;
     font-weight: 600;
@@ -2220,7 +2362,7 @@ a.btn {
     0% {
         width: 0;
         height: 0;
-        opacity: .3;
+        opacity: .5;
     }
     100% {
         width: 300px;
@@ -2233,7 +2375,7 @@ a.btn {
     0% {
         width: 0;
         height: 0;
-        opacity: .3;
+        opacity: .5;
     }
     100% {
         width: 300px;
@@ -2245,6 +2387,16 @@ a.btn {
 .btn-white {
     background: #fff;
     color: #f50057;
+}
+
+.btn-white .btn__ripple {
+    background: #404040;
+}
+
+@media only screen and (min-width: 1025px) {
+    .no-touch .btn-white:hover {
+        background: #e5e5e5;
+    }
 }
 
 input[type=text],
@@ -2530,6 +2682,10 @@ textarea {
     height: 100%;
 }
 
+.hero__wrapper * {
+    text-align: center;
+}
+
 .hero__content {
     position: relative;
     top: 50%;
@@ -2537,7 +2693,6 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: 1;
-    text-align: center;
 }
 
 .hero__content > h1 {
@@ -2568,4 +2723,183 @@ textarea {
 
 .hero__content .hero__landing-btn {
     margin-top: 32px;
+}
+
+.about__content {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.personal {
+    width: 100%;
+    max-width: 570px;
+    padding: 40px;
+    padding-right: 80px;
+    position: relative;
+    text-align: left;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+            box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+}
+
+.personal__info {
+    margin-top: 50px;
+}
+
+.personal__info h5 {
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.personal__info h5:first-of-type {
+    margin-top: 0;
+}
+
+.personal__info h5 span {
+    font-weight: 400;
+}
+
+.personal__pars {
+    margin-top: 47px;
+    line-height: 24px;
+}
+
+.personal__pars p {
+    margin-top: 18px;
+}
+
+.personal__pars p:first-of-type {
+    margin-top: 0;
+}
+
+.personal__btn {
+    margin-top: 47px;
+}
+
+.personal__dots-bg {
+    left: -40px;
+    bottom: -40px;
+}
+
+.skills {
+    width: 100%;
+    max-width: 440px;
+    padding: 40px;
+    margin-left: -40px;
+    position: relative;
+    text-align: left;
+    background: #f50057;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+            box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+}
+
+.skills > h4 {
+    color: #fff;
+}
+
+.skills__card {
+    width: 100%;
+    height: 61px;
+    margin-top: 25px;
+    padding: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+            box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
+}
+
+.skills__card:first-of-type {
+    margin-top: 49px;
+}
+
+.skills__card:nth-of-type(2) .skills__card-line {
+    width: 80%;
+}
+
+.skills__card:nth-of-type(3) .skills__card-upper-left .icon {
+    margin-top: 6px;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    font-size: 30px;
+}
+
+.skills__card:nth-of-type(3) .skills__card-upper-left h5 {
+    margin-left: 12px;
+}
+
+.skills__card:nth-of-type(3) .skills__card-line {
+    width: 65%;
+}
+
+.skills__card:last-of-type .skills__card-upper-left .icon {
+    margin-left: 15px;
+}
+
+.skills__card:last-of-type .skills__card-upper-left h5 {
+    margin-left: 20px;
+}
+
+.skills__card:last-of-type .skills__card-line {
+    width: 75%;
+}
+
+.skills__card-upper-left {
+    float: left;
+}
+
+.skills__card-upper-left .icon {
+    float: left;
+    margin-top: 9px;
+    margin-left: 9px;
+    font-size: 25px;
+    color: #f50057;
+}
+
+.skills__card-upper-left h5 {
+    float: left;
+    margin-top: 14px;
+    margin-left: 14px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.skills__card-upper-percentage {
+    float: right;
+    margin-top: 14px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.skills__card-line {
+    width: 90%;
+    height: 6px;
+    display: block;
+    margin-top: 4px;
+    background: #f50057;
+    border-radius: 5px;
+}
+
+.skills__btn {
+    margin-top: 50px;
+}
+
+.skills__dots-bg {
+    right: -40px;
+    top: -40px;
 }
