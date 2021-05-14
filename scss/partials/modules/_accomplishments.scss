@@ -1,0 +1,67 @@
+// ---------- Accomplishments styles ---------- //
+
+.accomplishments {
+    @extend %cover-bg;
+    @supports (background-attachment: fixed) {
+        background-attachment: fixed;
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        opacity: .75;
+        background: $black;
+    }
+}
+
+.accomplishments__wrapper {
+    padding: 80px 20px;
+}
+
+.accomplishments__cards {
+    @extend %clearfix;
+    * {
+        text-align: center;
+    }
+}
+
+.accomplishments__cards-card {
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+    padding: 30px 20px 25px;
+    float: left;
+    > h4,
+    > h5 {
+        color: $white;
+    }
+    > h4 {
+        margin-top: 15px;
+        font-size: 23px;
+    }
+    > h5 {
+        margin-top: 11px;
+        font-size: 17px;
+    }
+}
+
+.accomplishments__cards-card-rectangle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    border: 8px solid $white;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    .icon {
+        @include align(absolute, xy);
+        top: calc(50% + 4px);
+        font-size: 40px;
+        color: $white;
+        transition: .3s ease-in-out;
+    }
+}
