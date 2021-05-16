@@ -49,6 +49,23 @@ module.exports = {
         $('.font-icon-heart').on('click', function() {
             $(this).toggleClass('active');
         });
+    },
+
+    testimonialsSlider: function() {
+        new Swiper('.swiper-container', {
+            loop: false,
+            speed: 500,
+            pagination: {
+                el: '.testimonials__slider-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.testimonials__slider-next',
+                prevEl: '.testimonials__slider-prev',
+            },
+            simulateTouch: false
+        });
     }
 
 };

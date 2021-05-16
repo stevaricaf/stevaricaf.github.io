@@ -17,6 +17,7 @@ let app = {
 		functions.stickyHeader();
 		functions.filterProjects();
 		functions.heartClick();
+		functions.testimonialsSlider();
 
 	}
 };
