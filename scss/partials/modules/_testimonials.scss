@@ -25,6 +25,17 @@
 .testimonials__slide-inner-review {
     width: 60%;
     max-width: 450px;
+    position: relative;
+    .testimonials__slide-inner-review-bg {
+        @include align(absolute, xy);
+        top: calc(50% - 55px);
+        left: calc(50% + 32px);
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        transform: rotate(-20deg) translate(-50%, -50%);
+        opacity: .05;
+    }
     > h5 {
         text-transform: none;
         &:last-of-type {
@@ -108,7 +119,8 @@
         width: 15px;
         height: 15px;
         margin: 0 7.5px !important;
-        background: $red;
+        background: $white;
+        opacity: 1;
         box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
         transition: .3s ease-in-out;
         &:focus {
@@ -119,6 +131,7 @@
         }
         &.swiper-pagination-bullet-active {
             width: 30px;
+            background: $red;
             border-radius: 25px;
             @include hover {
                 background: $darkRed;

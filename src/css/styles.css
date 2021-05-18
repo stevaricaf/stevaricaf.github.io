@@ -3244,6 +3244,23 @@ textarea {
 .testimonials__slide-inner-review {
     width: 60%;
     max-width: 450px;
+    position: relative;
+}
+
+.testimonials__slide-inner-review .testimonials__slide-inner-review-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: calc(50% - 55px);
+    left: calc(50% + 32px);
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    -webkit-transform: rotate(-20deg) translate(-50%, -50%);
+            transform: rotate(-20deg) translate(-50%, -50%);
+    opacity: .05;
 }
 
 .testimonials__slide-inner-review > h5 {
@@ -3352,7 +3369,8 @@ textarea {
     width: 15px;
     height: 15px;
     margin: 0 7.5px !important;
-    background: #f50057;
+    background: #fff;
+    opacity: 1;
     -webkit-box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
             box-shadow: rgba(64, 64, 64, 0.2) 0 3px 5px;
     -webkit-transition: .3s ease-in-out;
@@ -3371,6 +3389,7 @@ textarea {
 
 .testimonials__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 30px;
+    background: #f50057;
     border-radius: 25px;
 }
 
