@@ -60,3 +60,18 @@ a {
         background: $silver;
     }
 }
+
+.btn-silver {
+    background: $silver;
+    color: $nero;
+    .btn__ripple {
+        background: $nero;
+    }
+    @include hover {
+        color: $white;
+        background: $nero;
+        .btn__ripple {
+            background: $white;
+        }
+    }
+}

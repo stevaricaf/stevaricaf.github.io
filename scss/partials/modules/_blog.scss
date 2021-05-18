@@ -1,0 +1,118 @@
+// ---------- Services styles ---------- //
+
+.blog__wrapper {
+    padding: 80px 20px;
+}
+
+.blog__cards {
+    @extend %clearfix;
+    margin-top: 57px;
+}
+
+.blog__cards-card {
+    width: calc(25% - 40px);
+    margin: 20px;
+    float: left;
+    display: none;
+    background: $white;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    cursor: pointer;
+}
+
+.blog__cards-card-image {
+    width: 100%;
+    height: 196px;
+    position: relative;
+    overflow: hidden;
+    img {
+        height: 100%;
+        object-fit: cover;
+        transition: .3s ease-in-out;
+    }
+    h6 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 7px 20px;
+        font-size: 10px;
+        color: $white;
+        background: $red;
+        border-radius: 3px;
+    }
+    @include hover {
+        img {
+            transform: scale(1.15);
+        }
+    }
+}
+
+.blog__cards-card-text {
+    padding: 20px;
+    h5 {
+        text-transform: none;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+}
+
+.blog__cards-card-footer {
+    @extend %clearfix;
+    padding: 10px 20px;
+    margin-top: 9px;
+    background: $bg;
+    border-top: 1px solid #e2e2e2;
+}
+
+.blog__cards-card-footer-avatar {
+    @extend %clearfix;
+    float: left;
+    img {
+        width: auto;
+        height: 30px;
+        margin-top: -1px;
+        float: left;
+    }
+    h6 {
+        float: left;
+        margin-top: 7px;
+        margin-left: 11px;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.blog__cards-card-footer-timing {
+    @extend %clearfix;
+    float: right;
+    h6 {
+        float: right;
+        margin-top: 7px;
+        font-weight: 400;
+        text-transform: none;
+    }
+    .icon {
+        float: right;
+        margin-top: 7px;
+        margin-right: 10px;
+        font-size: 15px;
+        color: $nero;
+    }
+}
+
+.blog__btn {
+    margin-top: 40px;
+    text-align: center;
+    .btn {
+        margin: 0 10px;
+    }
+    .blog__btn-less {
+        display: none;
+        &.active {
+            display: inline-block;
+        }
+    }
+}

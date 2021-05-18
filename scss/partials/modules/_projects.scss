@@ -4,15 +4,6 @@
     padding: 80px 20px 60px;
 }
 
-.projects__subpar {
-    width: 100%;
-    max-width: 800px;
-    margin: 27px auto 0;
-    font-size: 16px;
-    text-align: center;
-    line-height: 26px;
-}
-
 .projects__filters {
     @extend %clearfix;
     display: inline-block;

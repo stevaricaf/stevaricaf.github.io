@@ -18,6 +18,7 @@ let app = {
 		functions.filterProjects();
 		functions.heartClick();
 		functions.testimonialsSlider();
+		functions.loadMore();
 
 	}
 };

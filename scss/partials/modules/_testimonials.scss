@@ -35,6 +35,8 @@
         height: auto;
         transform: rotate(-20deg) translate(-50%, -50%);
         opacity: .05;
+        user-select: none;
+        pointer-events: none;
     }
     > h5 {
         text-transform: none;
@@ -115,10 +117,12 @@
 .testimonials__slider-pagination {
     margin-top: 40px;
     text-align: center;
+    font-size: 0;
     .swiper-pagination-bullet {
         width: 15px;
         height: 15px;
         margin: 0 7.5px !important;
+        vertical-align: middle;
         background: $white;
         opacity: 1;
         box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
