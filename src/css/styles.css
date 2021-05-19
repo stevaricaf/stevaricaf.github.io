@@ -2681,6 +2681,28 @@ textarea {
     }
 }
 
+.footer {
+    background: #404040;
+}
+
+.footer__wrapper {
+    padding: 40px;
+}
+
+.footer__copyrights {
+    float: left;
+    color: #fff;
+}
+
+.footer__author {
+    float: right;
+    color: #fff;
+}
+
+.footer__author span {
+    color: #f50057;
+}
+
 .hero {
     height: 100vh;
 }

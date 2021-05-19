@@ -1,0 +1,22 @@
+// ---------- Header styles ---------- //
+
+.footer {
+    background: $nero;
+}
+
+.footer__wrapper {
+    padding: 40px;
+}
+
+.footer__copyrights {
+    float: left;
+    color: $white;
+}
+
+.footer__author {
+    float: right;
+    color: $white;
+    span {
+        color: $red;
+    }
+}

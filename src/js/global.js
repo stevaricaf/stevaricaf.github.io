@@ -9882,12 +9882,12 @@
           if ($('.blog__cards-card:visible').length > 4 && $('.blog__cards-card:hidden').length !== 0) {
             $('.blog__btn-less').addClass('active');
           } else if ($('.blog__cards-card:hidden').length == 0) {
-            $('.blog__btn-more').hide();
+            $('.blog__btn-more').hide(300);
           }
         });
         $('.blog__btn-less').on('click', function () {
           $('.blog__cards-card:visible').slice(-4).slideUp(300);
-          $('.blog__btn-more').show();
+          $('.blog__btn-more').show(300);
 
           if ($('.blog__cards-card:visible').length == 8) {
             $('.blog__btn-less').removeClass('active');
