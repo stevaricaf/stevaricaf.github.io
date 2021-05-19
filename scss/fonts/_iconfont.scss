@@ -45,31 +45,31 @@
 	@if $filename == icon-dashboard {
 		$char: "\E007";
 	}
-	@if $filename == icon-email {
+	@if $filename == icon-exclamation-mark {
 		$char: "\E008";
 	}
-	@if $filename == icon-exclamation-mark {
+	@if $filename == icon-facebook {
 		$char: "\E009";
 	}
-	@if $filename == icon-facebook {
+	@if $filename == icon-gulp {
 		$char: "\E00A";
 	}
-	@if $filename == icon-gulp {
+	@if $filename == icon-heart {
 		$char: "\E00B";
 	}
-	@if $filename == icon-heart {
+	@if $filename == icon-html {
 		$char: "\E00C";
 	}
-	@if $filename == icon-html {
+	@if $filename == icon-instagram {
 		$char: "\E00D";
 	}
-	@if $filename == icon-instagram {
+	@if $filename == icon-js {
 		$char: "\E00E";
 	}
-	@if $filename == icon-js {
+	@if $filename == icon-left {
 		$char: "\E00F";
 	}
-	@if $filename == icon-left {
+	@if $filename == icon-mail {
 		$char: "\E010";
 	}
 	@if $filename == icon-patent {
@@ -135,9 +135,6 @@
 .font-icon-dashboard {
 	@include font(icon-dashboard);
 }
-.font-icon-email {
-	@include font(icon-email);
-}
 .font-icon-exclamation-mark {
 	@include font(icon-exclamation-mark);
 }
@@ -161,6 +158,9 @@
 }
 .font-icon-left {
 	@include font(icon-left);
+}
+.font-icon-mail {
+	@include font(icon-mail);
 }
 .font-icon-patent {
 	@include font(icon-patent);

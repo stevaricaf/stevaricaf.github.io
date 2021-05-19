@@ -4,7 +4,6 @@ input[type=text],
 input[type=email],
 textarea {
     width: 100%;
-    max-width: 320px;
     font-size: 13px;
     font-family: $font-default;
     font-weight: 400;
@@ -31,8 +30,6 @@ input[type=email] {
 }
 
 textarea {
-    margin-top: 635px;
-    margin-left: 490px;
     height: 150px;
     padding: 11px 10px;
     resize: none;

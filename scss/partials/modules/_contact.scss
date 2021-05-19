@@ -1,0 +1,211 @@
+// ---------- Hero styles ---------- //
+
+.contact__wrapper {
+    padding: 40px 40px 80px;
+}
+
+.contact__content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.helper {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 40px 0;
+    position: relative;
+    font-size: 0;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    h4 {
+        text-transform: none;
+    }
+    p {
+        margin-top: 46px;
+        line-height: 24px;
+    }
+    .helper__icon {
+        position: absolute;
+        right: 40px;
+        top: 42px;
+        color: $nero;
+        font-size: 24px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        @include hover {
+            color: $red;
+        }
+    }
+}
+
+.helper__info {
+    margin-top: 46px;
+    h5 {
+        margin-top: 10px;
+        font-size: 14px;
+        text-transform: none;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.helper__social {
+    @extend %clearfix;
+    margin-top: 50px;
+    .helper__social-rectangle {
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+        float: left;
+        position: relative;
+        border-radius: 50%;
+        box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+        background: $white;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        .icon {
+            @include align(absolute, xy);
+            top: calc(50% + 1px);
+            left: calc(50% + 1px);
+            font-size: 18px;
+            color: $red;
+            transition: .3s ease-in-out;
+        }
+        @include hover {
+            background: $red;
+            .icon {
+                color: $white;
+            }
+        }
+    }
+}
+
+.helper__bg {
+    width: calc(100% + 80px);
+    margin-top: 50px;
+    margin-left: -40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.helper__dots-bg {
+    left: -40px;
+    bottom: -40px;
+}
+
+.sender {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    margin-left: 40px;
+    display: none;
+    position: relative;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    h4 {
+        font-size: 20px;
+        text-transform: none;
+    }
+    .sender__rectangle {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        background: $white;
+        border-radius: 50%;
+        box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        .icon {
+            @include align(absolute, xy);
+            top: calc(50% + 1px);
+            left: calc(50% + 0.5px);
+            font-size: 12px;
+            color: $red;
+            transition: .3s ease-in-out;
+        }
+        @include hover {
+            background: $red;
+            .icon {
+                color: $white;
+            }
+        }
+    }
+}
+
+.sender__form {
+    margin-top: 40px;
+    text-align: center;
+    .sender__form-input {
+        margin-top: 25px;
+        position: relative;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        > .icon {
+            @include align(absolute, y);
+            top: calc(50% + 1px);
+            left: 10px;
+            font-size: 20px;
+            color: $red;
+        }
+        > .font-icon-mail {
+            font-size: 23px;
+            left: 8px;
+        }
+    }
+    textarea {
+        margin-top: 25px;
+    }
+    .sender__form-btn {
+        margin-top: 36px;
+    }
+}
+
+.sender__form-input-rectangle {
+    width: 20px;
+    height: 20px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    .icon {
+        @include align(absolute, xy);
+        font-size: 9px;
+        color: $white;
+    }
+    .font-icon-exclamation-mark {
+        top: calc(50% + 1px);
+        left: calc(50% + 0.5px);
+        font-size: 14px;
+    }
+    &.success {
+        background: $green;
+    }
+    &.error {
+        background: $red;
+    }
+}
+
+.sender__dots-bg {
+    top: -40px;
+    right: -40px;
+}

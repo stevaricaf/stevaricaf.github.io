@@ -9893,6 +9893,14 @@
             $('.blog__btn-less').removeClass('active');
           }
         });
+      },
+      loadForm: function loadForm() {
+        $('.helper__icon').on('click', function () {
+          $('.sender').show(300);
+        });
+        $('.sender__rectangle').on('click', function () {
+          $('.sender').hide(300);
+        });
       }
     };
   }, {}],
@@ -9915,6 +9923,7 @@
         functions.heartClick();
         functions.testimonialsSlider();
         functions.loadMore();
+        functions.loadForm();
       }
     };
     $(function () {

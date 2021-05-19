@@ -19,6 +19,7 @@ let app = {
 		functions.heartClick();
 		functions.testimonialsSlider();
 		functions.loadMore();
+		functions.loadForm();
 
 	}
 };

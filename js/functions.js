@@ -89,6 +89,16 @@ module.exports = {
                 $('.blog__btn-less').removeClass('active');
             }
         });
+    },
+
+    loadForm: function() {
+        $('.helper__icon').on('click', function() {
+            $('.sender').show(300)
+        });
+
+        $('.sender__rectangle').on('click', function() {
+            $('.sender').hide(300);
+        });
     }
 
 };
