@@ -3037,7 +3037,7 @@ textarea {
 .accomplishments::after {
     content: '';
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
     position: absolute;
     left: 0;
@@ -3248,13 +3248,15 @@ textarea {
 }
 
 .testimonials__wrapper {
-    padding: 40px;
-    overflow: hidden;
+    padding: 40px 20px 20px;
 }
 
 .testimonials__slider-container {
     margin-top: 80px;
-    overflow: visible;
+}
+
+.testimonials__slide {
+    padding: 0 100px;
 }
 
 .testimonials__slide-inner {
@@ -3406,7 +3408,7 @@ textarea {
 }
 
 .testimonials__slider-pagination {
-    margin-top: 40px;
+    margin: 40px 0 20px;
     text-align: center;
     font-size: 0;
 }
@@ -3452,7 +3454,7 @@ textarea {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    top: calc(50% - 34px);
+    top: calc(50% - 44px);
     z-index: 1;
     width: 50px;
     height: 50px;
@@ -3483,6 +3485,11 @@ textarea {
     color: #404040;
 }
 
+.testimonials__slider-next.testimonials__slider-prev,
+.testimonials__slider-prev.testimonials__slider-prev {
+    left: 20px;
+}
+
 .testimonials__slider-next.testimonials__slider-prev .icon,
 .testimonials__slider-prev.testimonials__slider-prev .icon {
     left: 50%;
@@ -3490,7 +3497,7 @@ textarea {
 
 .testimonials__slider-next.testimonials__slider-next,
 .testimonials__slider-prev.testimonials__slider-next {
-    right: 0;
+    right: 20px;
 }
 
 .testimonials__slider-next.swiper-button-disabled,
@@ -3575,6 +3582,7 @@ textarea {
 .blog__cards-card-footer {
     padding: 10px 20px;
     margin-top: 9px;
+    position: relative;
     background: #f5f5f5;
     border-top: 1px solid #e2e2e2;
 }

@@ -1,13 +1,15 @@
 // ---------- Testimonials styles ---------- //
 
 .testimonials__wrapper {
-    padding: 40px;
-    overflow: hidden;
+    padding: 40px 20px 20px;
 }
 
 .testimonials__slider-container {
     margin-top: 80px;
-    overflow: visible;
+}
+
+.testimonials__slide {
+    padding: 0 100px;
 }
 
 .testimonials__slide-inner {
@@ -117,7 +119,7 @@
 }
 
 .testimonials__slider-pagination {
-    margin-top: 40px;
+    margin: 40px 0 20px;
     text-align: center;
     font-size: 0;
     .swiper-pagination-bullet {
@@ -149,7 +151,7 @@
 .testimonials__slider-next,
 .testimonials__slider-prev {
     @include align(absolute, y);
-    top: calc(50% - 34px);
+    top: calc(50% - 44px);
     z-index: 1;
     width: 50px;
     height: 50px;
@@ -169,12 +171,13 @@
         color: $nero;
     }
     &.testimonials__slider-prev {
+        left: 20px;
         .icon {
             left: 50%;
         }
     }
     &.testimonials__slider-next {
-        right: 0;
+        right: 20px;
     }
     &.swiper-button-disabled {
         background: $silver;
