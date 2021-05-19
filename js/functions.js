@@ -27,6 +27,14 @@ module.exports = {
         });
     },
 
+    scrollOnClick: function() {
+        $('.hero__landing-btn, .nav a').on('click', function() {
+            $('body').css({
+                overflow: 'scroll'
+            });
+        });
+    },
+
     filterProjects: function() {
         $('.projects__filters-filter').on('click', function() {
 
@@ -98,6 +106,18 @@ module.exports = {
 
         $('.sender__rectangle').on('click', function() {
             $('.sender').hide(300);
+        });
+    },
+
+    toggleMenu: function() {
+        $('.menu').on('click', function() {
+            $('.nav').toggleClass('active');
+            $('.header__wrapper').toggleClass('active');
+        });
+
+        $('.nav a').on('click', function() {
+            $('.nav').removeClass('active');
+            $('.header__wrapper').removeClass('active');
         });
     }
 

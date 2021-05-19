@@ -9838,6 +9838,13 @@
           }
         });
       },
+      scrollOnClick: function scrollOnClick() {
+        $('.hero__landing-btn, .nav a').on('click', function () {
+          $('body').css({
+            overflow: 'scroll'
+          });
+        });
+      },
       filterProjects: function filterProjects() {
         $('.projects__filters-filter').on('click', function () {
           var value = $(this).attr('data-filter');
@@ -9901,6 +9908,16 @@
         $('.sender__rectangle').on('click', function () {
           $('.sender').hide(300);
         });
+      },
+      toggleMenu: function toggleMenu() {
+        $('.menu').on('click', function () {
+          $('.nav').toggleClass('active');
+          $('.header__wrapper').toggleClass('active');
+        });
+        $('.nav a').on('click', function () {
+          $('.nav').removeClass('active');
+          $('.header__wrapper').removeClass('active');
+        });
       }
     };
   }, {}],
@@ -9924,6 +9941,8 @@
         functions.testimonialsSlider();
         functions.loadMore();
         functions.loadForm();
+        functions.toggleMenu();
+        functions.scrollOnClick();
       }
     };
     $(function () {

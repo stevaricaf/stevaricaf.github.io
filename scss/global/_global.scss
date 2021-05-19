@@ -8,6 +8,7 @@ body {
     color: $nero;
     line-height: normal;
     letter-spacing: normal;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -19,6 +20,9 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
+    @include breakpoint(touch) {
+        padding: 40px 20px;
+    }
     * {
         text-align: left;
     }

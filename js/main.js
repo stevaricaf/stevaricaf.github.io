@@ -20,6 +20,8 @@ let app = {
 		functions.testimonialsSlider();
 		functions.loadMore();
 		functions.loadForm();
+		functions.toggleMenu();
+		functions.scrollOnClick();
 
 	}
 };

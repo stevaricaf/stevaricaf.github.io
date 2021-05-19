@@ -248,6 +248,7 @@ body {
     color: #404040;
     line-height: normal;
     letter-spacing: normal;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -258,6 +259,12 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 40px 20px;
+    }
 }
 
 .wrapper * {
@@ -2531,6 +2538,13 @@ textarea {
     padding: 20px 40px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .header.header--sticky .header__wrapper {
+        margin-top: 0;
+        padding: 20px;
+    }
+}
+
 .header.header--sticky .logo h3 {
     font-size: 32px;
 }
@@ -2540,14 +2554,45 @@ textarea {
     margin-top: 12px;
 }
 
+@media only screen and (max-width: 1024px) {
+    .header.header--sticky .menu.nav,
+    .header.header--sticky .nav.nav {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header.header--sticky .menu.menu,
+    .header.header--sticky .nav.menu {
+        margin-top: 11px;
+    }
+}
+
 .header__wrapper {
     padding: 40px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 }
 
+@media only screen and (max-width: 1024px) {
+    .header__wrapper {
+        padding: 20px;
+        text-align: left;
+    }
+    .header__wrapper.active {
+        background: #404040;
+    }
+}
+
 .logo {
     float: left;
+}
+
+@media only screen and (max-width: 1024px) {
+    .logo {
+        float: none;
+        display: inline-block;
+    }
 }
 
 .logo h3 {
@@ -2635,10 +2680,30 @@ textarea {
     transition: .3s ease-in-out;
 }
 
+@media only screen and (max-width: 1024px) {
+    .nav {
+        float: none;
+        height: 0;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .nav.active {
+        height: 248px;
+    }
+}
+
 .nav .nav__list .nav__list-item {
     float: left;
     position: relative;
     margin: 0 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav .nav__list .nav__list-item {
+        float: none;
+        text-align: center;
+        margin: 20px 0;
+    }
 }
 
 .nav .nav__list .nav__list-item:last-of-type {
