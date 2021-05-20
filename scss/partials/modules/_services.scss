@@ -4,12 +4,18 @@
     padding: 80px 20px 60px;
     @include breakpoint(touch) {
         padding: 40px 10px;
+        .services__heading {
+            padding: 0 10px;
+        }
     }
 }
 
 .services__cards {
     @extend %clearfix;
     margin-top: 60px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     * {
         text-align: center;
     }

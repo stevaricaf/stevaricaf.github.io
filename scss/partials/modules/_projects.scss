@@ -4,6 +4,9 @@
     padding: 80px 20px 60px;
     @include breakpoint(touch) {
         padding: 40px 10px 30px;
+        .projects__heading {
+            padding: 0 10px;
+        }
     }
 }
 

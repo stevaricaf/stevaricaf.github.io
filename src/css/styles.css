@@ -3182,10 +3182,19 @@ textarea {
     .services__wrapper {
         padding: 40px 10px;
     }
+    .services__wrapper .services__heading {
+        padding: 0 10px;
+    }
 }
 
 .services__cards {
     margin-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .services__cards {
+        margin-top: 30px;
+    }
 }
 
 .services__cards * {
@@ -3363,6 +3372,9 @@ textarea {
 @media only screen and (max-width: 1024px) {
     .projects__wrapper {
         padding: 40px 10px 30px;
+    }
+    .projects__wrapper .projects__heading {
+        padding: 0 10px;
     }
 }
 
@@ -3560,7 +3572,10 @@ textarea {
 
 @media only screen and (max-width: 767px) {
     .testimonials__wrapper {
-        padding: 40px 0;
+        padding: 0 0 40px;
+    }
+    .testimonials__wrapper .testimonials__heading {
+        padding: 0 20px;
     }
 }
 
@@ -3570,7 +3585,7 @@ textarea {
 
 @media only screen and (max-width: 767px) {
     .testimonials__slider-container {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 
@@ -3938,6 +3953,12 @@ textarea {
     .blog__wrapper {
         padding: 0 10px;
     }
+    .blog__wrapper .blog__heading {
+        padding: 0 20px;
+    }
+    .blog__wrapper .blog__subpar {
+        padding: 0 20px;
+    }
 }
 
 .blog__cards {
@@ -4074,6 +4095,12 @@ textarea {
     text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+    .blog__btn {
+        margin-top: 30px;
+    }
+}
+
 .blog__btn .btn {
     margin: 0 10px;
 }
@@ -4115,7 +4142,7 @@ textarea {
 @media only screen and (max-width: 767px) {
     .contact__content {
         display: block;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }
 
