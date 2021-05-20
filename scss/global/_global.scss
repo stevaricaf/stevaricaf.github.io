@@ -41,9 +41,15 @@ body {
     position: relative;
     h5 {
         color: $red;
+        @include breakpoint(phone) {
+            text-align: center;
+        }
     }
     h2 {
         margin-top: 10px;
+        @include breakpoint(phone) {
+            text-align: center;
+        }
     }
 }
 

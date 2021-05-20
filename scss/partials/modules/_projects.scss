@@ -11,6 +11,9 @@
     @extend %clearfix;
     display: inline-block;
     margin-top: 47px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
 }
 
 .projects__filters-filter {
@@ -26,6 +29,9 @@
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
     transition: .3s ease-in-out;
     cursor: pointer;
+    @include breakpoint(phone) {
+        margin: 0 5px;
+    }
     @include hover {
         background: $red;
         color: $white;
@@ -54,6 +60,9 @@
         width: calc(50% - 20px);
         margin: 10px;
     }
+    @include breakpoint(phone) {
+        width: calc(100% - 20px);
+    }
     .projects__images-image-img {
         height: 100%;
         object-fit: cover;
@@ -65,6 +74,9 @@
         @include breakpoint(touch) {
             width: calc(50% - 20px);
             height: 350px;
+        }
+        @include breakpoint(phone) {
+            width: calc(100% - 20px);
         }
     }
     @include hover {
@@ -96,6 +108,9 @@
     overflow: hidden;
     transition: .3s ease-in-out;
     transition-delay: .3s;
+    @include breakpoint(phone) {
+        left: 0;
+    }
     > h5 {
         margin: 25px;
         font-size: 20px;

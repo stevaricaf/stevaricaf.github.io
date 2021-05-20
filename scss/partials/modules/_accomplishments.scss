@@ -21,6 +21,9 @@
 
 .accomplishments__wrapper {
     padding: 80px 20px;
+    @include breakpoint(touch) {
+        padding: 30px 20px;
+    }
 }
 
 .accomplishments__cards {
@@ -35,6 +38,10 @@
     margin: 0 20px;
     padding: 30px 20px 25px;
     float: left;
+    @include breakpoint(phone) {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
     > h4,
     > h5 {
         color: $white;

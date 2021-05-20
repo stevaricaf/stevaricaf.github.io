@@ -6,16 +6,28 @@
 
 .footer__wrapper {
     padding: 40px;
+    @include breakpoint(phone) {
+        padding: 40px 20px;
+    }
 }
 
 .footer__copyrights {
     float: left;
     color: $white;
+    @include breakpoint(phone) {
+        float: none;
+        text-align: center;
+    }
 }
 
 .footer__author {
     float: right;
     color: $white;
+    @include breakpoint(phone) {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
     span {
         color: $red;
     }

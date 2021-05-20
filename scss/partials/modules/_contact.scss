@@ -2,6 +2,9 @@
 
 .contact__wrapper {
     padding: 40px 40px 80px;
+    @include breakpoint(phone) {
+        padding: 40px 20px;
+    }
 }
 
 .contact__content {
@@ -9,6 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include breakpoint(phone) {
+        display: block;
+        margin-top: 40px;
+    }
 }
 
 .helper {
@@ -20,12 +27,18 @@
     background: $white;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    @include breakpoint(phone) {
+        padding: 20px 25px;
+    }
     h4 {
         text-transform: none;
     }
     p {
         margin-top: 46px;
         line-height: 24px;
+        @include breakpoint(phone) {
+            margin-top: 30px;
+        }
     }
     .helper__icon {
         position: absolute;
@@ -35,6 +48,10 @@
         font-size: 24px;
         cursor: pointer;
         transition: .3s ease-in-out;
+        @include breakpoint(phone) {
+            top: 20px;
+            right: 25px;
+        }
         @include hover {
             color: $red;
         }
@@ -43,10 +60,16 @@
 
 .helper__info {
     margin-top: 46px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     h5 {
         margin-top: 10px;
         font-size: 14px;
         text-transform: none;
+        @include breakpoint(phone) {
+            margin-top: 5px;
+        }
         &:first-of-type {
             margin-top: 0;
         }
@@ -59,6 +82,9 @@
 .helper__social {
     @extend %clearfix;
     margin-top: 50px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     .helper__social-rectangle {
         width: 35px;
         height: 35px;
@@ -100,6 +126,10 @@
     border-bottom-right-radius: 5px;
     pointer-events: none;
     user-select: none;
+    @include breakpoint(phone) {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+    }
 }
 
 .helper__dots-bg {
@@ -117,6 +147,11 @@
     background: $white;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    @include breakpoint(phone) {
+        padding: 20px 25px;
+        margin-left: 0;
+        margin-top: 40px;
+    }
     h4 {
         font-size: 20px;
         text-transform: none;
@@ -132,6 +167,10 @@
         box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
         cursor: pointer;
         transition: .3s ease-in-out;
+        @include breakpoint(phone) {
+            top: 20px;
+            right: 25px;
+        }
         .icon {
             @include align(absolute, xy);
             top: calc(50% + 1px);
@@ -152,9 +191,15 @@
 .sender__form {
     margin-top: 40px;
     text-align: center;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     .sender__form-input {
         margin-top: 25px;
         position: relative;
+        @include breakpoint(phone) {
+            margin-top: 15px;
+        }
         &:first-of-type {
             margin-top: 0;
         }
@@ -172,9 +217,15 @@
     }
     textarea {
         margin-top: 25px;
+        @include breakpoint(phone) {
+            margin-top: 15px;
+        }
     }
     .sender__form-btn {
         margin-top: 36px;
+        @include breakpoint(phone) {
+            margin-top: 30px;
+        }
     }
 }
 
@@ -207,4 +258,8 @@
 .sender__dots-bg {
     top: -40px;
     right: -40px;
+    @include breakpoint(phone) {
+        top: auto;
+        bottom: -40px;
+    }
 }

@@ -61,6 +61,9 @@
         span {
             color: $red;
         }
+        @include breakpoint(phone) {
+            font-size: 36px;
+        }
     }
     @include hover {
         h3 {

@@ -2,16 +2,25 @@
 
 .testimonials__wrapper {
     padding: 40px 20px 20px;
+    @include breakpoint(phone) {
+        padding: 40px 0;
+    }
 }
 
 .testimonials__slider-container {
     margin-top: 80px;
+    @include breakpoint(phone) {
+        margin-top: 50px;
+    }
 }
 
 .testimonials__slide {
     padding: 0 100px;
     @include breakpoint(touch) {
         padding: 0;
+    }
+    @include breakpoint(phone) {
+        padding: 0 20px;
     }
 }
 
@@ -27,12 +36,19 @@
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
     background: $white;
+    @include breakpoint(phone) {
+        flex-direction: column-reverse;
+    }
 }
 
 .testimonials__slide-inner-review {
     width: 60%;
     max-width: 450px;
     position: relative;
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-top: 30px;
+    }
     .testimonials__slide-inner-review-bg {
         @include align(absolute, xy);
         top: calc(50% - 55px);
@@ -47,25 +63,42 @@
     }
     > h5 {
         text-transform: none;
+        @include breakpoint(phone) {
+            text-align: center;
+        }
         &:last-of-type {
             margin-top: 47px;
+            @include breakpoint(phone) {
+                margin-top: 30px;
+            }
         }
     }
     > p {
         margin-top: 48px;
         line-height: 22px;
+        @include breakpoint(phone) {
+            margin-top: 30px;
+            text-align: center;
+        }
     }
     > h6 {
         margin-top: 10px;
         font-size: 14px;
         font-weight: 400;
         text-transform: none;
+        @include breakpoint(phone) {
+            text-align: center;
+        }
     }
 }
 
 .testimonials__slide-inner-review-avatar {
     @extend %clearfix;
     margin-top: 50px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+        text-align: center;
+    }
     .testimonials__slide-inner-review-avatar-rectangle {
         width: 50px;
         height: 50px;
@@ -74,6 +107,10 @@
         position: relative;
         border-radius: 50%;
         overflow: hidden;
+        @include breakpoint(phone) {
+            float: none;
+            display: inline-block;
+        }
         img {
             transition: .3s ease-in-out;
         }
@@ -87,6 +124,9 @@
 
 .testimonials__slide-inner-avatar {
     width: 40%;
+    @include breakpoint(phone) {
+        width: 100%;
+    }
     .testimonials__slide-inner-avatar-wrapper {
         width: 100%;
         display: inline-block;
@@ -96,6 +136,9 @@
             max-width: 220px;
             margin-top: 20px;
             margin-left: 35px;
+            @include breakpoint(phone) {
+                margin-left: 0;
+            }
         }
         .testimonials__slide-inner-avatar-wrapper-rectangle {
             @include align(absolute, xy);
@@ -106,6 +149,9 @@
             border-radius: 50%;
             overflow: hidden;
             border: 5px solid $white;
+            @include breakpoint(phone) {
+                left: 50%;
+            }
             img {
                 @include align(absolute, xy);
                 width: 180px;

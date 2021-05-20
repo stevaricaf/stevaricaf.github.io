@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include breakpoint(phone) {
+        display: block;
+        margin-top: 40px;
+    }
 }
 
 .personal {
@@ -17,14 +21,23 @@
     background: $white;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    @include breakpoint(phone) {
+        padding: 20px 25px;
+    }
 }
 
 .personal__info {
     margin-top: 50px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     h5 {
         margin-top: 15px;
         font-size: 16px;
         text-transform: none;
+        @include breakpoint(phone) {
+            margin-top: 5px;
+        }
         &:first-of-type {
             margin-top: 0;
         }
@@ -37,8 +50,14 @@
 .personal__pars {
     margin-top: 47px;
     line-height: 24px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
     p {
         margin-top: 18px;
+        @include breakpoint(phone) {
+            margin-top: 10px;
+        }
         &:first-of-type {
             margin-top: 0;
         }
@@ -47,6 +66,9 @@
 
 .personal__btn {
     margin-top: 47px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
 }
 
 .personal__dots-bg {
@@ -64,6 +86,11 @@
     background: $red;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    @include breakpoint(phone) {
+        padding: 20px 25px;
+        margin-top: 40px;
+        margin-left: 0;
+    }
     > h4 {
         color: $white;
     }
@@ -78,8 +105,14 @@
     background: $white;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
+    @include breakpoint(phone) {
+        margin-top: 15px;
+    }
     &:first-of-type {
         margin-top: 49px;
+        @include breakpoint(phone) {
+            margin-top: 30px;
+        }
     }
     &:nth-of-type(2) {
         .skills__card-line {
@@ -159,9 +192,16 @@
 
 .skills__btn {
     margin-top: 50px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
 }
 
 .skills__dots-bg {
     right: -40px;
     top: -40px;
+    @include breakpoint(phone) {
+        top: auto;
+        bottom: -40px;
+    }
 }
