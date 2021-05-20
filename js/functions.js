@@ -27,14 +27,6 @@ module.exports = {
         });
     },
 
-    scrollOnClick: function() {
-        $('.hero__landing-btn, .nav a').on('click', function() {
-            $('body').css({
-                overflow: 'scroll'
-            });
-        });
-    },
-
     filterProjects: function() {
         $('.projects__filters-filter').on('click', function() {
 
@@ -112,12 +104,15 @@ module.exports = {
     toggleMenu: function() {
         $('.menu').on('click', function() {
             $('.nav').toggleClass('active');
-            $('.header__wrapper').toggleClass('active');
+            $('.menu__line').toggleClass('active');
+            $('body').toggleClass('body--overflow');
         });
 
         $('.nav a').on('click', function() {
             $('.nav').removeClass('active');
             $('.header__wrapper').removeClass('active');
+            $('.menu__line').removeClass('active');
+            $('body').removeClass('body--overflow');
         });
     }
 

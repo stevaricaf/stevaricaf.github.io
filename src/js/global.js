@@ -9838,13 +9838,6 @@
           }
         });
       },
-      scrollOnClick: function scrollOnClick() {
-        $('.hero__landing-btn, .nav a').on('click', function () {
-          $('body').css({
-            overflow: 'scroll'
-          });
-        });
-      },
       filterProjects: function filterProjects() {
         $('.projects__filters-filter').on('click', function () {
           var value = $(this).attr('data-filter');
@@ -9912,11 +9905,14 @@
       toggleMenu: function toggleMenu() {
         $('.menu').on('click', function () {
           $('.nav').toggleClass('active');
-          $('.header__wrapper').toggleClass('active');
+          $('.menu__line').toggleClass('active');
+          $('body').toggleClass('body--overflow');
         });
         $('.nav a').on('click', function () {
           $('.nav').removeClass('active');
           $('.header__wrapper').removeClass('active');
+          $('.menu__line').removeClass('active');
+          $('body').removeClass('body--overflow');
         });
       }
     };
@@ -9942,7 +9938,6 @@
         functions.loadMore();
         functions.loadForm();
         functions.toggleMenu();
-        functions.scrollOnClick();
       }
     };
     $(function () {

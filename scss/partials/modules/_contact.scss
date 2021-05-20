@@ -79,7 +79,6 @@
         .icon {
             @include align(absolute, xy);
             top: calc(50% + 1px);
-            left: calc(50% + 1px);
             font-size: 18px;
             color: $red;
             transition: .3s ease-in-out;

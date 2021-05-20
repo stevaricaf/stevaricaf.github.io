@@ -2,6 +2,9 @@
 
 .projects__wrapper {
     padding: 80px 20px 60px;
+    @include breakpoint(touch) {
+        padding: 40px 10px 30px;
+    }
 }
 
 .projects__filters {
@@ -47,18 +50,22 @@
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
     overflow: hidden;
+    @include breakpoint(touch) {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
     .projects__images-image-img {
         height: 100%;
         object-fit: cover;
         transition: .3s ease-in-out;
     }
-    &:nth-of-type(4) {
+    &.projects__images-image-modifier50 {
         width: calc(50% - 40px);
         height: 500px;
-    }
-    &:nth-of-type(5) {
-        width: calc(50% - 40px);
-        height: 500px;
+        @include breakpoint(touch) {
+            width: calc(50% - 20px);
+            height: 350px;
+        }
     }
     @include hover {
         .projects__images-image-img {
@@ -71,6 +78,10 @@
     &.filtered {
         width: calc(33.33% - 40px);
         height: 350px;
+        @include breakpoint(touch) {
+            width: calc(50% - 20px);
+            height: 350px;
+        }
     }
 }
 

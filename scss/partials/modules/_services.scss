@@ -1,12 +1,15 @@
 // ---------- Services styles ---------- //
 
 .services__wrapper {
-    padding: 80px 20px;
+    padding: 80px 20px 60px;
+    @include breakpoint(touch) {
+        padding: 40px 10px;
+    }
 }
 
 .services__cards {
     @extend %clearfix;
-    margin-top: 80px;
+    margin-top: 60px;
     * {
         text-align: center;
     }
@@ -14,13 +17,17 @@
 
 .services__cards-card {
     width: calc(25% - 40px);
-    margin: 0 20px;
+    margin: 20px;
     padding: 30px 20px;
     float: left;
     border-radius: 5px;
     box-shadow: rgba($color: ($nero), $alpha: .2) 0 3px 5px;
     background: $white;
     transition: .3s ease-in-out;
+    @include breakpoint(1156px) {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
     > h5 {
         margin-top: 30px;
     }

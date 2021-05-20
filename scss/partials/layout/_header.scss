@@ -46,9 +46,6 @@
     @include breakpoint(touch) {
         padding: 20px;
         text-align: left;
-        &.active {
-            background: $nero;
-        }
     }
 }
 
@@ -121,15 +118,23 @@
     transition: .3s ease-in-out;
     @include breakpoint(touch) {
         float: none;
-        height: 0;
-        margin-top: 20px;
+        width: calc(100% - 64px);
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        margin-top: 0;
+        background: $red;
         overflow: hidden;
         &.active {
-            height: 248px;
+            left: 0;
         }
     }
     .nav__list {
         @extend %clearfix;
+        @include breakpoint(touch) {
+            @include align(absolute, xy);
+        }
         .nav__list-item {
             float: left;
             position: relative;
@@ -137,7 +142,7 @@
             @include breakpoint(touch) {
                 float: none;
                 text-align: center;
-                margin: 20px 0;
+                margin: 25px 0;
             }
             &:last-of-type {
                 margin-right: 0;
@@ -148,6 +153,9 @@
                 text-transform: uppercase;
                 color: $white;
                 transition: .3s ease-in-out;
+                @include breakpoint(touch) {
+                    font-size: 20px;
+                }
                 &::after {
                     @include align(absolute, x);
                     bottom: -7px;

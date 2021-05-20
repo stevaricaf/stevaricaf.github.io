@@ -21,7 +21,6 @@ let app = {
 		functions.loadMore();
 		functions.loadForm();
 		functions.toggleMenu();
-		functions.scrollOnClick();
 
 	}
 };

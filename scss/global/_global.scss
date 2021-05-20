@@ -8,7 +8,9 @@ body {
     color: $nero;
     line-height: normal;
     letter-spacing: normal;
-    overflow: hidden;
+    &.body--overflow {
+        overflow: hidden;
+    }
 }
 
 .wrapper {

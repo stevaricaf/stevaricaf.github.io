@@ -10,6 +10,9 @@
 
 .testimonials__slide {
     padding: 0 100px;
+    @include breakpoint(touch) {
+        padding: 0;
+    }
 }
 
 .testimonials__slide-inner {
@@ -160,6 +163,9 @@
     background: $white;
     cursor: pointer;
     transition: .3s ease-in-out;
+    @include breakpoint(touch) {
+        display: none;
+    }
     &:focus {
         outline: none;
     }
