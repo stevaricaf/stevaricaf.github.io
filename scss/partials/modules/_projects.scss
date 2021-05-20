@@ -97,6 +97,9 @@
             width: calc(50% - 20px);
             height: 350px;
         }
+        @include breakpoint(touch) {
+            width: calc(100% - 20px);
+        }
     }
 }
 

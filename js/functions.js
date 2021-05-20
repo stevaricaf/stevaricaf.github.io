@@ -114,6 +114,19 @@ module.exports = {
             $('.menu__line').removeClass('active');
             $('body').removeClass('body--overflow');
         });
+    },
+
+    smoothScroll: function() {
+        $('.nav a, .btn[href]').on('click', function(event) {
+
+            event.preventDefault();
+
+            let hash = $(this).attr('href');
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000);
+        });
     }
 
 };
