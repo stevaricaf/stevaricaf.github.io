@@ -1,0 +1,77 @@
+// ---------- Helpers ---------- //
+
+%clearfix {
+	&::before,
+	&::after {
+		content: '';
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+.clearfix {
+	@extend %clearfix;
+}
+
+%hide {
+	display: none;
+}
+
+.hide {
+	@extend %hide;
+}
+
+%show {
+	display: block;
+}
+
+.show {
+	@extend %show;
+}
+
+%float-left {
+    float: left;
+}
+
+.float-left {
+    @extend %float-left;
+}
+
+%float-right {
+    float: right;
+}
+
+.float-right {
+    @extend %float-right;
+}
+
+%flex-center-xy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-xy {
+    @extend %flex-center-xy;
+}
+
+%cover-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cover-bg {
+    @extend %cover-bg;
+}
+
+%box-shadow {
+    box-shadow: rgba($black, 0.1) 0 4px 6px -1px,
+                rgba($black, 0.06) 0 2px 4px -1px;
+}
+
+.box-shadow {
+    @extend %box-shadow;
+}

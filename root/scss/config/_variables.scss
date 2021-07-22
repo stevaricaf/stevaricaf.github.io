@@ -1,0 +1,41 @@
+// ---------- Variables ---------- //
+
+$font-default: 'Roboto';
+
+// ---------- White ---------- //
+
+$white: #fff;
+$smokeWhite: #f5f5f5;
+
+// ---------- Black ---------- //
+
+$black: #000;
+$noir: #202020;
+$nero: #404040;
+
+// ---------- Gray ---------- //
+
+$lightGray: #e8e8e8;
+$gray: #999;
+$darkGray: #808080;
+
+// ---------- Blue ---------- //
+
+$blue: #007cc7;
+$darkBlue: #005c94;
+
+
+// ---------- SCSS/CSS var ---------- //
+
+:root {
+    --white: #{$white};
+    --smoke-white: #{$smokeWhite};
+    --black: #{$black};
+    --noir: #{$noir};
+    --nero: #{$nero};
+    --light-gray: #{$lightGray};
+    --gray: #{$gray};
+    --dark-gray: #{$darkGray};
+    --blue: #{$blue};
+    --dark-blue: #{$darkBlue};
+}

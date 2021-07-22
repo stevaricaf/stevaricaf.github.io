@@ -1,0 +1,36 @@
+// ---------- Global ---------- //
+
+body {
+    font-family: $font-default;
+    font-size: 14px;
+    font-weight: 400;
+    color: $nero;
+    line-height: normal;
+    letter-spacing: normal;
+    background: $smokeWhite;
+}
+
+.wrap {
+    @extend %clearfix;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    position: relative;
+    @include breakpoint(phone) {
+        padding: 40px 15px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
