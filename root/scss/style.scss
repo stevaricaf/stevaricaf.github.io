@@ -5,7 +5,8 @@
 
 // ---------- Fonts ---------- //
 
-@import 'fonts/fonts';
+@import 'fonts/fonts',
+        'fonts/iconfont';
 
 // ---------- Helpers ---------- //
 
@@ -27,11 +28,12 @@
 
 // ---------- Components ---------- //
 
-// @import 'components/component-name';
+@import 'components/button';
 
 // ---------- Layout ---------- //
 
-// @import 'templates/layout/layout-name';
+@import 'templates/layout/hero',
+        'templates/layout/header';
 
 // ---------- Modules ---------- //
 

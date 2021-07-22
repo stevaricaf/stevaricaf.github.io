@@ -1,0 +1,121 @@
+// ---------- Hero ---------- //
+
+.container--h-full {
+    height: 100vh;
+    @include breakpoint(landscape) {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.wrap--h-full {
+    height: 100vh;
+    @include breakpoint(landscape) {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
+.wrap--flex {
+    display: flex;
+    align-items: center;
+    @include breakpoint(landscape) {
+        justify-content: center;
+    }
+}
+
+.hero {
+    width: 50%;
+    margin-top: 70px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+    @include breakpoint(phone) {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    @include breakpoint(landscape) {
+        text-align: center;
+    }
+}
+
+.hero__h1 {
+    margin-bottom: 40px;
+    @include breakpoint(touch) {
+        margin-bottom: 20px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 10px;
+    }
+}
+
+.hero__desc {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    > span {
+        font-weight: 700;
+    }
+    @include breakpoint(touch) {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    @include breakpoint(landscape) {
+        text-align: center;
+    }
+}
+
+.hero__btn-wrap {
+    display: flex;
+    @include breakpoint(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoint(landscape) {
+        justify-content: center;
+    }
+}
+
+.hero__btn {
+    margin: 0 10px;
+    &:first-of-type {
+        margin-left: 0;
+    }
+    @include breakpoint(touch) {
+        margin: 0 5px;
+    }
+    @include breakpoint(phone) {
+        margin: 5px 0;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.avatar {
+    height: 850px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    pointer-events: none;
+    @include breakpoint(touch) {
+        height: 700px;
+    }
+    @include breakpoint(phone) {
+        @include align(absolute, x);
+        height: 500px;
+        opacity: 0.7;
+    }
+    @include breakpoint(landscape) {
+        display: none;
+    }
+}

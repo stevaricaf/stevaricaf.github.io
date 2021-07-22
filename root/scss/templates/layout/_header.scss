@@ -1,0 +1,208 @@
+// ---------- Header ---------- //
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    transition: 0.3s ease-in-out;
+    &.active {
+        @extend %box-shadow;
+        background-color: $white;
+        .wrap--h-pd {
+            padding: 20px;
+            @include breakpoint(phone) {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.wrap--h-pd {
+    padding: 40px 20px;
+    transition: 0.3s ease-in-out;
+    @include breakpoint(phone) {
+        padding: 15px;
+    }
+}
+
+.wrap--flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    display: inline-block;
+}
+
+.logo__h4 {
+    font-weight: 500;
+    letter-spacing: normal;
+    > span {
+        margin-left: 5px;
+        padding: 5px 10px;
+        display: inline-block;
+        color: $white;
+        background-color: $blue;
+    }
+}
+
+.nav {
+    transition: 0.3s ease-in-out;
+    &.active {
+        left: 0;
+    }
+    @include breakpoint(touch) {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 21;
+        overflow: auto;
+        background-color: $white;
+    }
+}
+
+.nav__list {
+    display: flex;
+    @include breakpoint(touch) {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.nav__item {
+    padding: 0 15px;
+    @include breakpoint(touch) {
+        padding: 15px 0;
+    }
+}
+
+.nav__link {
+    position: relative;
+    font-size: 16px;
+    color: $nero;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    &::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        background-color: $blue;
+        transition: 0.3s ease-in-out;
+    }
+    @include hover {
+        color: $blue;
+        &::after {
+            width: 50%;
+        }
+    }
+    @include breakpoint(phone) {
+        font-size: 14px;
+    }
+}
+
+.change-mode {
+    @extend %box-shadow;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    position: relative;
+    border-radius: 50%;
+    @include hover {
+        .change-mode__icon {
+            color: $blue;
+        }
+    }
+    @include breakpoint(touch) {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
+
+.change-mode__icon {
+    @include align(absolute, xy);
+    top: calc(50% + 2px);
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+.change-mode__icon--night {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.change-mode__icon--sun {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.menu {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    z-index: 31;
+    @include breakpoint(desktop) {
+        display: none;
+    }
+}
+
+.menu__line {
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    background-color: rgba($nero, 1);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    &::before,
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        background-color: $nero;
+    }
+    &::before {
+        top: -10px;
+        left: 0;
+        transition: top 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &::after {
+        bottom: -10px;
+        right: 0;
+        transition: bottom 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &.active {
+        background-color: rgba($nero, 0);
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                        transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        &::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+                        transform 0.3s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    }
+}

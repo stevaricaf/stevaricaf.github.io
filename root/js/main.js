@@ -13,7 +13,10 @@ let app = {
 		}
 
 		// Call your functions here
-		functions.app();
+		functions.ripple();
+		functions.stickyHeader();
+		functions.toggleMenu();
+		functions.changeMode();
 
 	}
 };
