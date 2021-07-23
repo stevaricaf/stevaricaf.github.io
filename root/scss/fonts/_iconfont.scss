@@ -24,11 +24,29 @@
 @function font-char($filename) {
 	$char: "";
 
-	@if $filename == icon-night {
+	@if $filename == icon-display {
 		$char: "\E001";
 	}
-	@if $filename == icon-sun {
+	@if $filename == icon-key {
 		$char: "\E002";
+	}
+	@if $filename == icon-leaf {
+		$char: "\E003";
+	}
+	@if $filename == icon-mobile {
+		$char: "\E004";
+	}
+	@if $filename == icon-night {
+		$char: "\E005";
+	}
+	@if $filename == icon-pencil {
+		$char: "\E006";
+	}
+	@if $filename == icon-seo {
+		$char: "\E007";
+	}
+	@if $filename == icon-sun {
+		$char: "\E008";
 	}
 
 	@return $char;
@@ -45,8 +63,26 @@
 	}
 }
 
+.font-icon-display {
+	@include font(icon-display);
+}
+.font-icon-key {
+	@include font(icon-key);
+}
+.font-icon-leaf {
+	@include font(icon-leaf);
+}
+.font-icon-mobile {
+	@include font(icon-mobile);
+}
 .font-icon-night {
 	@include font(icon-night);
+}
+.font-icon-pencil {
+	@include font(icon-pencil);
+}
+.font-icon-seo {
+	@include font(icon-seo);
 }
 .font-icon-sun {
 	@include font(icon-sun);

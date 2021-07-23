@@ -1,0 +1,103 @@
+// ---------- Services ---------- //
+
+.wrap--pd-50 {
+    padding: 50px 20px;
+}
+
+.services-heading {
+    position: relative;
+    background-color: $blue;
+    text-align: center;
+    &::after {
+        @include align(absolute, x);
+        bottom: -17px;
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        border-top: 17px solid $blue;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+}
+
+.services-heading__h4 {
+    color: $white;
+}
+
+.wrap--pd-60 {
+    padding: 60px 0;
+    @include breakpoint(phone) {
+        padding: 40px 15px;
+    }
+}
+
+.services-cards {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.services-cards__item {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 45px 25px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    @include hover {
+        background-color: $blue;
+        .services-cards__rectangle {
+            border-color: $white;
+        }
+        .services-cards__icon,
+        .services-cards__h5,
+        .services-cards-desc {
+            color: $white;
+        }
+    }
+    @include breakpoint(touch) {
+        width: calc(50% - 40px);
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+.services-cards__rectangle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    position: relative;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards__icon {
+    @include align(absolute, xy);
+    top: calc(50% + 4px);
+    font-size: 30px;
+    color: $blue;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards__h5 {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards-desc {
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}

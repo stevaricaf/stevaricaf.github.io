@@ -91,7 +91,7 @@ input[type=button] {
     font-family: "font-icon";
     src: url("../../../assets/fonts/dist/font-icon.woff2") format("woff2"), url("../../../assets/fonts/dist/font-icon.woff") format("woff"), url("../../../assets/fonts/dist/font-icon.ttf") format("truetype");
 }
-.font-icon-sun:before, .font-icon-night:before {
+.font-icon-sun:before, .font-icon-seo:before, .font-icon-pencil:before, .font-icon-night:before, .font-icon-mobile:before, .font-icon-leaf:before, .font-icon-key:before, .font-icon-display:before {
     font-family: "font-icon";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -102,12 +102,36 @@ input[type=button] {
     text-transform: none;
 }
 
-.font-icon-night:before {
+.font-icon-display:before {
     content: "";
 }
 
-.font-icon-sun:before {
+.font-icon-key:before {
     content: "";
+}
+
+.font-icon-leaf:before {
+    content: "";
+}
+
+.font-icon-mobile:before {
+    content: "";
+}
+
+.font-icon-night:before {
+    content: "";
+}
+
+.font-icon-pencil:before {
+    content: "";
+}
+
+.font-icon-seo:before {
+    content: "";
+}
+
+.font-icon-sun:before {
+    content: "";
 }
 
 .wrap::before, .clearfix::before, .wrap::after, .clearfix::after {
@@ -935,4 +959,133 @@ button,
         width: 100%;
         height: auto;
     }
+}
+
+.wrap--pd-50 {
+    padding: 50px 20px;
+}
+
+.services-heading {
+    position: relative;
+    background-color: #007cc7;
+    text-align: center;
+}
+.services-heading::after {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -17px;
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-top: 17px solid #007cc7;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.services-heading__h4 {
+    color: #fff;
+}
+
+.wrap--pd-60 {
+    padding: 60px 0;
+}
+@media only screen and (max-width: 767px) {
+    .wrap--pd-60 {
+        padding: 40px 15px;
+    }
+}
+
+.services-cards {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+    .services-cards {
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+.services-cards__item {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 45px 25px;
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+@media only screen and (min-width: 1025px) {
+    .no-touch .services-cards__item:hover {
+        background-color: #007cc7;
+    }
+    .no-touch .services-cards__item:hover .services-cards__rectangle {
+        border-color: #fff;
+    }
+    .no-touch .services-cards__item:hover .services-cards__icon,
+.no-touch .services-cards__item:hover .services-cards__h5,
+.no-touch .services-cards__item:hover .services-cards-desc {
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .services-cards__item {
+        width: calc(50% - 40px);
+    }
+}
+@media only screen and (max-width: 767px) {
+    .services-cards__item {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+.services-cards__rectangle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    position: relative;
+    border: 2px solid #007cc7;
+    border-radius: 50%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: calc(50% + 4px);
+    font-size: 30px;
+    color: #007cc7;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards__h5 {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.services-cards-desc {
+    text-align: center;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
