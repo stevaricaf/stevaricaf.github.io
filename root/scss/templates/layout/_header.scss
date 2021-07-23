@@ -90,6 +90,7 @@
     color: $nero;
     letter-spacing: 1.6px;
     text-transform: uppercase;
+    transition: 0.3s ease-in-out;
     &::after {
         content: '';
         width: 0;

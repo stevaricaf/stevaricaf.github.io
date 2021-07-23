@@ -31,15 +31,37 @@ $darkGreen: #008c7a;
 
 // ---------- SCSS/CSS var ---------- //
 
-:root {
-    --white: #{$white};
-    --smoke-white: #{$smokeWhite};
-    --black: #{$black};
-    --noir: #{$noir};
-    --nero: #{$nero};
-    --light-gray: #{$lightGray};
-    --gray: #{$gray};
-    --dark-gray: #{$darkGray};
-    --blue: #{$blue};
-    --dark-blue: #{$darkBlue};
-}
+// :root {
+//     --primary:          #{$blue};
+//     --primary-dark:     #{$darkBlue};
+//     --secondary:        #{$white};
+//     --secondary-dark:   #{$smokeWhite};
+//     --tertiary-light:   #{$nero};
+//     --tertiary:         #{$noir};
+//     --tertiary-dark:    #{$black};
+//     --quaternary-light: #{$lightGray};
+//     --quaternary:       #{$gray};
+//     --quaternary-dark:  #{$darkGray};
+// }
+
+// // ---------- Theme ---------- //
+
+// $primary:           var(--primary);
+// $primary-dark:      var(--primary-dark);
+// $secondary:         var(--secondary);
+// $secondary-dark:    var(--secondary-dark);
+// $tertiary-light:    var(--tertiary-light);
+// $tertiary:          var(--tertiary);
+// $tertiary-dark:     var(--tertiary-dark);
+// $quaternary-light:  var(--quaternary-light);
+// $quaternary:        var(--quaternary);
+// $quaternary-dark:   var(--quaternary-dark);
+
+// .dark-mode {
+//     --primary:          #{$green};
+//     --primary-dark:     #{$darkGreen};
+//     --secondary:        #{$nero};
+//     --secondary-dark:   #{$noir};
+//     --tertiary-light:   #{$smokeWhite};
+//     --tertiary:         #{$white};
+// }

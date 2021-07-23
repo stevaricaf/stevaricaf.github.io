@@ -33,6 +33,9 @@ h3,
 .h3 {
     font-size: 36px;
     letter-spacing: 1.8px;
+    @include breakpoint(phone) {
+        font-size: 24px;
+    }
 }
 
 h4,

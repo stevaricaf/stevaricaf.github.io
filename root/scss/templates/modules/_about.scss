@@ -1,0 +1,76 @@
+// ---------- About ---------- //
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(touch) {
+        flex-direction: column-reverse;
+    }
+}
+
+.about-main {
+    width: 50%;
+    padding-right: 20px;
+    @include breakpoint(touch) {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+.about-main__h3 {
+    margin-bottom: 50px;
+    @include breakpoint(touch) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 20px;
+    }
+}
+
+.about-main-desc {
+    margin-bottom: 50px;
+    @include breakpoint(touch) {
+        margin-bottom: 30px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 20px;
+    }
+}
+
+.about-main-desc__text {
+    margin-bottom: 30px;
+    @include breakpoint(touch) {
+        max-width: 620px;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    @include breakpoint(phone) {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.about-devices {
+    width: 50%;
+    padding-left: 20px;
+    @include breakpoint(touch) {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+.about-devices__img {
+    width: 100%;
+    display: block;
+    @include breakpoint(touch) {
+        width: auto;
+        height: 400px;
+        margin: 0 auto;
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        height: auto;
+    }
+}

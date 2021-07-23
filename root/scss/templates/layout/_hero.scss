@@ -26,12 +26,13 @@
 
 .hero {
     width: 50%;
-    margin-top: 70px;
+    margin-top: 120px;
     padding-right: 20px;
     position: relative;
     z-index: 1;
     @include breakpoint(phone) {
         width: 100%;
+        margin-top: 70px;
         padding-right: 0;
         text-align: center;
     }
@@ -95,6 +96,9 @@
     }
     @include breakpoint(phone) {
         margin: 5px 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
         &:last-of-type {
             margin-bottom: 0;
         }
