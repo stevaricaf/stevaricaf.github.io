@@ -42,14 +42,18 @@
     module.exports = {
       ripple: function ripple() {
         $('.btn').on('click', function (item) {
-          $('.btn').append('<span class="btn__ripple"></span>');
           var top = $(window).scrollTop() - $(this).offset().top + item.clientY;
           var left = $(window).scrollLeft() - $(this).offset().left + item.clientX;
-          $(this).children('.btn__ripple').css({
+          var ripple = $('<span></span>');
+          ripple.css({
             top: top,
             left: left
-          });
-          $(this).children('.btn__ripple').addClass('active');
+          }).addClass('btn__ripple');
+          $(this).append(ripple);
+          $(this).children(ripple).addClass('active');
+          setTimeout(function () {
+            ripple.remove();
+          }, 300);
         });
       },
       stickyHeader: function stickyHeader() {
@@ -82,7 +86,7 @@
         $('.change-mode').on('click', function () {
           $('.change-mode__icon--night').toggleClass('active');
           $('.change-mode__icon--sun').toggleClass('active');
-          $('html').toggleClass('dark-mode');
+          $('body').toggleClass('dark-mode');
         });
       }
     };
