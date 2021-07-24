@@ -1,0 +1,186 @@
+// ---------- Skills ---------- //
+
+.skills__heading {
+    margin-bottom: 173px;
+    @include breakpoint(touch) {
+        margin-bottom: 153px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 133px;
+    }
+}
+
+.skills-card {
+    @extend %box-shadow;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    background-color: $blue;
+    @include hover {
+        .skills-card__img {
+            height: 466px;
+            @include breakpoint(phone) {
+                height: 366px;
+            }
+        }
+    }
+    @include breakpoint(phone) {
+        max-width: 100%;
+    }
+}
+
+.skills-card__avatar {
+    height: 350px;
+    position: relative;
+    @include breakpoint(phone) {
+        height: 250px;
+    }
+}
+
+.skills-card__img {
+    @include align(absolute, x);
+    bottom: 0;
+    height: 446px;
+    transition: 0.3s ease-in-out;
+    @include breakpoint(phone) {
+        height: 346px;
+    }
+}
+
+.skills-card__info {
+    padding: 20px;
+    text-align: center;
+    background-color: $white;
+}
+
+.skills-card__profile {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: $blue;
+    @include breakpoint(phone) {
+        font-size: 14px;
+    }
+}
+
+.skills-card__name {
+    font-size: 14px;
+    font-weight: 400;
+    @include breakpoint(phone) {
+        font-size: 12px;
+    }
+}
+
+.skills-expertise {
+    position: relative;
+    background-color: $blue;
+    &::after {
+        @include align(absolute, x);
+        top: -17px;
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        border-bottom: 17px solid $blue;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+}
+
+.skills-expertise-info {
+    width: 360px;
+    margin-top: 4px;
+    margin-right: 80px;
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.skills-expertise-info__name {
+    margin-bottom: 10px;
+    color: $white;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.skills-expertise-info__profile {
+    margin-bottom: 32px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    color: $white;
+    @include breakpoint(phone) {
+        margin-bottom: 22px;
+    }
+}
+
+.skills-expertise-info__description {
+    margin-bottom: 36px;
+    color: $white;
+    @include breakpoint(phone) {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+}
+
+.skills-expertise-level {
+    width: 360px;
+    @include breakpoint(phone) {
+        width: 100%;
+    }
+}
+
+.skills-expertise-level__item {
+    margin-bottom: 20px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.skills-expertise-level__meta {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-expertise-level__title,
+.skills-expertise-level__percentage {
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.skills-expertise-level__line-box {
+    height: 10px;
+    position: relative;
+    background-color: $darkBlue;
+    border-radius: 25px;
+}
+
+.skills-expertise-level__line {
+    width: 100%;
+    height: 10px;
+    display: block;
+    background-color: $white;
+    border-radius: 25px;
+    &--width-90 {
+        width: 90%;
+    }
+    &--width-75 {
+        width: 75%;
+    }
+    &--width-65 {
+        width: 65%;
+    }
+    &--width-80 {
+        width: 80%;
+    }
+    &--width-50 {
+        width: 50%;
+    }
+}

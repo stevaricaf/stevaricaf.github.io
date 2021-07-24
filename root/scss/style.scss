@@ -28,7 +28,8 @@
 
 // ---------- Components ---------- //
 
-@import 'components/button';
+@import 'components/button',
+        'components/module-class';
 
 // ---------- Layout ---------- //
 
@@ -38,4 +39,5 @@
 // ---------- Modules ---------- //
 
 @import 'templates/modules/about',
-        'templates/modules/services';
+        'templates/modules/services',
+        'templates/modules/skills';
