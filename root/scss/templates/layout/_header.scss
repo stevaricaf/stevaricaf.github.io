@@ -10,7 +10,7 @@
     &.active {
         @extend %box-shadow;
         background-color: $white;
-        .wrap--h-pd {
+        .wrap--pd-40 {
             padding: 20px;
             @include breakpoint(phone) {
                 padding: 15px;
@@ -19,34 +19,32 @@
     }
 }
 
-.wrap--h-pd {
-    padding: 40px 20px;
-    transition: 0.3s ease-in-out;
-    @include breakpoint(phone) {
-        padding: 15px;
-    }
-}
-
-.wrap--flex-sb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     margin-right: auto;
     display: inline-block;
+    transition: 0.3s ease-in-out;
+    @include hover {
+        .logo__h4 {
+            > span {
+                color: $blue;
+                background-color: transparent;
+            }
+        }
+    }
 }
 
 .logo__h4 {
     font-weight: 500;
     letter-spacing: normal;
+    transition: 0.3s ease-in-out;
     > span {
         margin-left: 5px;
-        padding: 5px 10px;
+        padding: 2px 7px;
         display: inline-block;
         color: $white;
         background-color: $blue;
+        border: 3px solid $blue;
+        transition: 0.3s ease-in-out;
     }
 }
 
@@ -78,7 +76,7 @@
 }
 
 .nav__item {
-    padding: 0 15px;
+    padding: 0 13px 0 15px;
     @include breakpoint(touch) {
         padding: 15px 0;
     }

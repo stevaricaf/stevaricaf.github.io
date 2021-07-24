@@ -1,58 +1,34 @@
 // ---------- Hero ---------- //
 
-.container--h-full {
-    height: 100vh;
-    @include breakpoint(landscape) {
-        min-height: 100vh;
-        height: auto;
-    }
-}
-
-.wrap--h-full {
-    height: 100vh;
-    @include breakpoint(landscape) {
-        min-height: 100vh;
-        height: auto;
-    }
-}
-
-.wrap--flex {
-    display: flex;
-    align-items: center;
-    @include breakpoint(landscape) {
-        justify-content: center;
-    }
-}
-
-.hero {
+.home {
     width: 50%;
     margin-top: 120px;
-    padding-right: 20px;
     position: relative;
     z-index: 1;
     @include breakpoint(phone) {
         width: 100%;
         margin-top: 70px;
-        padding-right: 0;
         text-align: center;
     }
     @include breakpoint(landscape) {
+        width: 100%;
+        margin-top: 70px;
         text-align: center;
     }
 }
 
-.hero__h1 {
-    margin-bottom: 40px;
+.home__title {
+    margin-bottom: 37px;
     @include breakpoint(touch) {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     @include breakpoint(phone) {
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
 }
 
-.hero__desc {
-    margin-bottom: 50px;
+.home__description {
+    margin-bottom: 47px;
     font-size: 18px;
     font-weight: 300;
     line-height: 28px;
@@ -60,14 +36,12 @@
         font-weight: 700;
     }
     @include breakpoint(touch) {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
         font-size: 16px;
         line-height: 26px;
     }
     @include breakpoint(phone) {
-        margin-bottom: 20px;
-        font-size: 14px;
-        line-height: 24px;
+        margin-bottom: 17px;
         text-align: center;
     }
     @include breakpoint(landscape) {
@@ -75,7 +49,7 @@
     }
 }
 
-.hero__btn-wrap {
+.home__btn-wrap {
     display: flex;
     @include breakpoint(phone) {
         flex-direction: column;
@@ -86,22 +60,27 @@
     }
 }
 
-.hero__btn {
+.home__btn {
     margin: 0 10px;
-    &:first-of-type {
-        margin-left: 0;
-    }
     @include breakpoint(touch) {
         margin: 0 5px;
     }
     @include breakpoint(phone) {
         margin: 5px 0;
-        &:first-of-type {
-            margin-top: 0;
-        }
-        &:last-of-type {
-            margin-bottom: 0;
-        }
+    }
+}
+
+.home__btn--contact {
+    margin-left: 0;
+    @include breakpoint(phone) {
+        margin-top: 0;
+    }
+}
+
+.home__btn--projects {
+    margin-right: 0;
+    @include breakpoint(phone) {
+        margin-bottom: 0;
     }
 }
 
@@ -117,7 +96,7 @@
     @include breakpoint(phone) {
         @include align(absolute, x);
         height: 500px;
-        opacity: 0.7;
+        opacity: 0.3;
     }
     @include breakpoint(landscape) {
         display: none;

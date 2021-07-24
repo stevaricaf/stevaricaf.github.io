@@ -16,6 +16,7 @@ const {
 function localServer(done) {
     browserSync.init({
         port: 8080,
+        online: false,
         open: true,
         notify: false,
         server: {

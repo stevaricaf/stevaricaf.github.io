@@ -17,8 +17,12 @@ body {
     margin: 0 auto;
     padding: 80px 20px;
     position: relative;
+    transition: 0.3s ease-in-out;
+    @include breakpoint(touch) {
+        padding: 60px 20px;
+    }
     @include breakpoint(phone) {
-        padding: 40px 15px;
+        padding: 40px 20px;
     }
 }
 
@@ -33,4 +37,85 @@ img {
     width: auto;
     max-width: 100%;
     height: auto;
+}
+
+.container--h-100vh,
+.wrap--h-100vh {
+	height: 100vh;
+	@include breakpoint(phone) {
+		min-height: 100vh;
+		height: auto;
+	}
+}
+
+.container--of-vb {
+    overflow: visible;
+}
+
+.wrap--flex-aic {
+	display: flex;
+	align-items: center;
+}
+
+.wrap--pd-40 {
+	padding: 40px 20px;
+    @include breakpoint(phone) {
+        padding: 20px;
+    }
+}
+
+.wrap--pd-50 {
+    padding: 50px 20px;
+}
+
+.wrap--pd-60-0 {
+    padding: 60px 0;
+    @include breakpoint(touch) {
+        padding: 50px 10px;
+    }
+    @include breakpoint(phone) {
+        padding: 30px 20px;
+    }
+}
+
+.wrap--flex-sb-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-box {
+    position: relative;
+    background-color: $blue;
+    text-align: center;
+    &::after {
+        @include align(absolute, x);
+        bottom: -17px;
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        border-top: 17px solid $blue;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col__item {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    @include breakpoint(touch) {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
