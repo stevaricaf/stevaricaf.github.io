@@ -1,0 +1,71 @@
+// ---------- Slider theme ---------- //
+
+.slider-theme-wrapper {
+    margin-bottom: 75px;
+    @include breakpoint(touch) {
+        margin-bottom: 55px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 35px;
+    }
+}
+
+.slider-theme__slide {
+    text-align: center;
+}
+
+.slider-theme__btn {
+    margin-top: -3px;
+    margin-bottom: 15px;
+}
+
+.slider-theme__icon {
+    font-size: 35px;
+    color: $white;
+    @include breakpoint(phone) {
+        font-size: 25px;
+    }
+}
+
+.slider-theme__description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 300;
+    color: $white;
+    line-height: 28px;
+    text-align: center;
+    @include breakpoint(phone) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.slider-theme__link {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: $white;
+    line-height: 28px;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-color: $white;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    @include hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    @include breakpoint(phone) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

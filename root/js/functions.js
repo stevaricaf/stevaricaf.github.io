@@ -90,6 +90,23 @@ module.exports = {
 			$(this).children('.filter-cards-meta__icon--empty').toggleClass('active');
 			$(this).children('.filter-cards-meta__icon--filled').toggleClass('active');
 		});
+	},
+
+	sliderTheme: function() {
+		const swiper = new Swiper('.slider-theme-container', {
+			autoplay: {
+				delay: 5000,
+			},
+			speed: 1000,
+			loop: true,
+			pagination: {
+				el: '.slider-theme-pagination',
+				type: 'bullets',
+				bulletElement: 'button',
+				clickable: true
+			},
+			simulateTouch: false
+		});
 	}
 
 };

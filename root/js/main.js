@@ -19,6 +19,7 @@ let app = {
 		functions.changeMode();
 		functions.filter();
 		functions.like();
+		functions.sliderTheme();
 
 	}
 };

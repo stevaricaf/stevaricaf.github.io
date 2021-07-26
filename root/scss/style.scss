@@ -20,7 +20,7 @@
 
 // ---------- Libs ---------- //
 
-// @import 'libs/lib-name';
+@import 'libs/swiper/swiper';
 
 // ---------- Plugins ---------- //
 
@@ -41,4 +41,5 @@
 @import 'templates/modules/about',
         'templates/modules/services',
         'templates/modules/skills',
-        'templates/modules/portfolio';
+        'templates/modules/portfolio',
+        'templates/modules/slider-theme';
