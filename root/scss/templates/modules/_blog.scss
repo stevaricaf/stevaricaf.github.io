@@ -1,0 +1,85 @@
+// ---------- Blog ---------- //
+
+.blog {
+    margin-bottom: 20px;
+    @include breakpoint(touch) {
+        margin-bottom: 10px;
+    }
+}
+
+.blog__item {
+    @extend %box-shadow;
+    display: none;
+    flex-direction: column;
+}
+
+.blog__img-wrap {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog__img {
+    min-height: 100%;
+    height: fit-content;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.blog__main {
+    padding: 20px 20px 16px;
+    flex: 1;
+    background-color: $white;
+}
+
+.blog__link {
+    margin-bottom: 17px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: $blue;
+}
+
+.blog__footer {
+    padding: 15px 20px;
+    background-color: $smokeWhite;
+}
+
+.blog__author {
+    margin-bottom: 10px;
+    > span {
+        font-weight: 500;
+    }
+}
+
+.blog__btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(phone) {
+        flex-direction: column;
+    }
+}
+
+.blog__btn {
+    margin: 0 10px;
+    @include breakpoint(phone) {
+        margin: 5px 0;
+    }
+}
+
+.blog__btn--show-less {
+    margin-left: 0;
+    display: none;
+    @include breakpoint(phone) {
+        margin-top: 0;
+    }
+}
+
+.blog__btn--show-more {
+    margin-right: 0;
+    @include breakpoint(phone) {
+        margin-bottom: 0;
+    }
+}

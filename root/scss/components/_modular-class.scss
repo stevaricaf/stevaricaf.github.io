@@ -166,6 +166,14 @@
 .flex-col__item-25 {
     width: calc(25% - 40px);
     margin: 20px;
+    @include breakpoint(touch) {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
 
 .social__box {

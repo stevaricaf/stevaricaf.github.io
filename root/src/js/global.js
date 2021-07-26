@@ -9888,7 +9888,7 @@
         });
       },
       sliderTheme: function sliderTheme() {
-        var swiper = new Swiper('.slider-theme-container', {
+        new Swiper('.slider-theme-container', {
           autoplay: {
             delay: 5000
           },
@@ -9901,6 +9901,25 @@
             clickable: true
           },
           simulateTouch: false
+        });
+      },
+      blogSlice: function blogSlice() {
+        $('.blog__item').slice(0, 4).css('display', 'flex');
+        $('.blog__btn--show-more').on('click', function () {
+          $('.blog__item:hidden').slice(0, 4).slideDown(300).css('display', 'flex');
+
+          if ($('.blog__item').length > 4) {
+            $('.blog__btn--show-less').show();
+          }
+
+          if ($('.blog__item:hidden').length == 0) {
+            $('.blog__btn--show-more').hide();
+          }
+        });
+        $('.blog__btn--show-less').on('click', function () {
+          $('.blog__item').slice(4).slideUp(300);
+          $('.blog__btn--show-less').hide();
+          $('.blog__btn--show-more').show();
         });
       }
     };
@@ -9925,6 +9944,7 @@
         functions.filter();
         functions.like();
         functions.sliderTheme();
+        functions.blogSlice();
       }
     };
     $(function () {

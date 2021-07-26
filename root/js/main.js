@@ -20,6 +20,7 @@ let app = {
 		functions.filter();
 		functions.like();
 		functions.sliderTheme();
+		functions.blogSlice();
 
 	}
 };
