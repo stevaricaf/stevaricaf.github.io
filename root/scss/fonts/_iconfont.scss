@@ -36,29 +36,38 @@
 	@if $filename == icon-google {
 		$char: "\E004";
 	}
-	@if $filename == icon-key {
+	@if $filename == icon-heart-empty {
 		$char: "\E005";
 	}
-	@if $filename == icon-leaf {
+	@if $filename == icon-heart-filled {
 		$char: "\E006";
 	}
-	@if $filename == icon-mobile {
+	@if $filename == icon-key {
 		$char: "\E007";
 	}
-	@if $filename == icon-night {
+	@if $filename == icon-leaf {
 		$char: "\E008";
 	}
-	@if $filename == icon-pencil {
+	@if $filename == icon-mobile {
 		$char: "\E009";
 	}
-	@if $filename == icon-seo {
+	@if $filename == icon-night {
 		$char: "\E00A";
 	}
-	@if $filename == icon-sun {
+	@if $filename == icon-pencil {
 		$char: "\E00B";
 	}
-	@if $filename == icon-twitter {
+	@if $filename == icon-seo {
 		$char: "\E00C";
+	}
+	@if $filename == icon-sun {
+		$char: "\E00D";
+	}
+	@if $filename == icon-twitter {
+		$char: "\E00E";
+	}
+	@if $filename == icon-zoom-in {
+		$char: "\E00F";
 	}
 
 	@return $char;
@@ -87,6 +96,12 @@
 .font-icon-google {
 	@include font(icon-google);
 }
+.font-icon-heart-empty {
+	@include font(icon-heart-empty);
+}
+.font-icon-heart-filled {
+	@include font(icon-heart-filled);
+}
 .font-icon-key {
 	@include font(icon-key);
 }
@@ -110,5 +125,8 @@
 }
 .font-icon-twitter {
 	@include font(icon-twitter);
+}
+.font-icon-zoom-in {
+	@include font(icon-zoom-in);
 }
 

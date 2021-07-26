@@ -17,6 +17,8 @@ let app = {
 		functions.stickyHeader();
 		functions.toggleMenu();
 		functions.changeMode();
+		functions.filter();
+		functions.like();
 
 	}
 };

@@ -12,9 +12,6 @@
         background-color: $white;
         .wrap--pd-40 {
             padding: 20px;
-            @include breakpoint(phone) {
-                padding: 15px;
-            }
         }
     }
 }
@@ -145,6 +142,8 @@
 
 .change-mode__icon--sun {
     display: none;
+    top: calc(50% + 3px);
+    left: calc(50% + 0.5px);
     &.active {
         display: block;
     }

@@ -9,7 +9,7 @@
     }
 }
 
-.about-main {
+.about__main {
     width: 50%;
     padding-right: 20px;
     @include breakpoint(touch) {
@@ -19,7 +19,7 @@
     }
 }
 
-.about-main__title {
+.about__title {
     margin-bottom: 54px;
     @include breakpoint(touch) {
         margin-bottom: 34px;
@@ -29,7 +29,7 @@
     }
 }
 
-.about-main__description-wrap {
+.about__description-wrap {
     margin-bottom: 46px;
     @include breakpoint(touch) {
         margin-bottom: 26px;
@@ -39,7 +39,7 @@
     }
 }
 
-.about-main__description {
+.about__description {
     margin-bottom: 40px;
     @include breakpoint(touch) {
         max-width: 620px;
@@ -52,26 +52,15 @@
     }
 }
 
-.about-bg {
+.about__img {
     width: 50%;
     padding-left: 20px;
+    display: block;
+    pointer-events: none;
     @include breakpoint(touch) {
         width: 100%;
+        max-width: 600px;
         margin-bottom: 20px;
         padding-left: 0;
-    }
-}
-
-.about-bg__img {
-    width: 100%;
-    display: block;
-    @include breakpoint(touch) {
-        width: auto;
-        height: 400px;
-        margin: 0 auto;
-    }
-    @include breakpoint(phone) {
-        width: 100%;
-        height: auto;
     }
 }

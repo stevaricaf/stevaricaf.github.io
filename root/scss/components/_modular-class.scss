@@ -1,0 +1,177 @@
+// ---------- Module class ---------- //
+
+.container--height-100vh,
+.wrap--height-100vh {
+	height: 100vh;
+	@include breakpoint(phone) {
+		min-height: 100vh;
+		height: auto;
+	}
+}
+
+.container--bg-white {
+    background-color: $white;
+}
+
+.wrap--flex-center-y {
+	display: flex;
+	align-items: center;
+}
+
+.wrap--flex-center-all {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+
+.wrap--flex-sb-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-db {
+    @include breakpoint(phone) {
+        display: block;
+    }
+}
+
+.wrap--pd-40 {
+	padding: 40px 20px;
+    @include breakpoint(phone) {
+        padding: 20px;
+    }
+}
+
+.wrap--pd-50 {
+    padding: 50px 20px;
+    @include breakpoint(touch) {
+        padding: 40px 20px;
+    }
+}
+
+.wrap--pd-60 {
+    padding: 60px 20px;
+    @include breakpoint(touch) {
+        padding: 50px 20px;
+    }
+    @include breakpoint(phone) {
+        padding: 30px 20px;
+    }
+}
+
+.wrap--pd-bottom-60 {
+    padding-bottom: 60px;
+}
+
+.heading-main {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.heading-main--mg-bottom {
+    margin-bottom: 57px;
+    @include breakpoint(phone) {
+        margin-bottom: 37px;
+    }
+}
+
+.heading-main__title {
+    margin-bottom: 27px;
+    @include breakpoint(phone) {
+        margin-bottom: 17px;
+    }
+}
+
+.heading-main__description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 28px;
+    text-align: center;
+    @include breakpoint(touch) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.heading-sub {
+    position: relative;
+    background-color: $blue;
+    text-align: center;
+    &::after {
+        @include align(absolute, x);
+        bottom: -17px;
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        border-top: 17px solid $blue;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+}
+
+.flex-col {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(touch) {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.flex-col__item-33 {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    @include breakpoint(touch) {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+    }
+    @include breakpoint(phone) {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.flex-col__item-25 {
+    width: calc(25% - 40px);
+    margin: 20px;
+}
+
+.social__box {
+    margin-left: -4px;
+    display: flex;
+    align-items: center;
+    @include breakpoint(phone) {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+.social__link {
+    margin-right: 19.5px;
+    display: inline-block;
+    @include hover {
+        .social__icon {
+            color: $nero;
+        }
+    }
+    @include breakpoint(phone) {
+        margin: 0 15px;
+    }
+}
+
+.social__icon {
+    color: $white;
+    transition: 0.3s ease-in-out;
+}

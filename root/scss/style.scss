@@ -29,7 +29,7 @@
 // ---------- Components ---------- //
 
 @import 'components/button',
-        'components/module-class';
+        'components/modular-class';
 
 // ---------- Layout ---------- //
 
@@ -40,4 +40,5 @@
 
 @import 'templates/modules/about',
         'templates/modules/services',
-        'templates/modules/skills';
+        'templates/modules/skills',
+        'templates/modules/portfolio';
