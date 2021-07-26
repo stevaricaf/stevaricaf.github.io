@@ -91,7 +91,7 @@ input[type=button] {
     font-family: "font-icon";
     src: url("../../../assets/fonts/dist/font-icon.woff2") format("woff2"), url("../../../assets/fonts/dist/font-icon.woff") format("woff"), url("../../../assets/fonts/dist/font-icon.ttf") format("truetype");
 }
-.font-icon-zoom-in:before, .font-icon-twitter:before, .font-icon-sun:before, .font-icon-seo:before, .font-icon-pencil:before, .font-icon-night:before, .font-icon-mobile:before, .font-icon-leaf:before, .font-icon-key:before, .font-icon-heart-filled:before, .font-icon-heart-empty:before, .font-icon-google:before, .font-icon-github:before, .font-icon-facebook:before, .font-icon-display:before {
+.font-icon-zoom-in:before, .font-icon-twitter:before, .font-icon-sun:before, .font-icon-seo:before, .font-icon-quotation:before, .font-icon-pencil:before, .font-icon-night:before, .font-icon-mobile:before, .font-icon-leaf:before, .font-icon-key:before, .font-icon-heart-filled:before, .font-icon-heart-empty:before, .font-icon-google:before, .font-icon-github:before, .font-icon-facebook:before, .font-icon-display:before, .font-icon-chevron-right:before, .font-icon-chevron-left:before {
     font-family: "font-icon";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -102,64 +102,76 @@ input[type=button] {
     text-transform: none;
 }
 
-.font-icon-display:before {
+.font-icon-chevron-left:before {
     content: "";
 }
 
-.font-icon-facebook:before {
+.font-icon-chevron-right:before {
     content: "";
 }
 
-.font-icon-github:before {
+.font-icon-display:before {
     content: "";
 }
 
-.font-icon-google:before {
+.font-icon-facebook:before {
     content: "";
 }
 
-.font-icon-heart-empty:before {
+.font-icon-github:before {
     content: "";
 }
 
-.font-icon-heart-filled:before {
+.font-icon-google:before {
     content: "";
 }
 
-.font-icon-key:before {
+.font-icon-heart-empty:before {
     content: "";
 }
 
-.font-icon-leaf:before {
+.font-icon-heart-filled:before {
     content: "";
 }
 
-.font-icon-mobile:before {
+.font-icon-key:before {
     content: "";
 }
 
-.font-icon-night:before {
+.font-icon-leaf:before {
     content: "";
 }
 
-.font-icon-pencil:before {
+.font-icon-mobile:before {
     content: "";
 }
 
-.font-icon-seo:before {
+.font-icon-night:before {
     content: "";
 }
 
-.font-icon-sun:before {
+.font-icon-pencil:before {
     content: "";
 }
 
-.font-icon-twitter:before {
+.font-icon-quotation:before {
     content: "";
 }
 
-.font-icon-zoom-in:before {
+.font-icon-seo:before {
     content: "";
+}
+
+.font-icon-sun:before {
+    content: "";
+}
+
+.font-icon-twitter:before {
+    content: "";
+}
+
+.font-icon-zoom-in:before {
+    content: "";
 }
 
 .wrap::before, .clearfix::before, .wrap::after, .clearfix::after {
@@ -207,7 +219,7 @@ input[type=button] {
     background-position: center center;
 }
 
-.blog__item, .filter-cards__item, .skills-card, .change-mode, .header.active, .box-shadow {
+.testimonials__item, .blog__item, .filter-cards__item, .skills-card, .change-mode, .header.active, .box-shadow {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
             box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
 }
@@ -1239,6 +1251,17 @@ button,
     }
 }
 
+.wrap--pd-rl-60 {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+@media only screen and (max-width: 1024px) {
+    .wrap--pd-rl-60 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
 .heading-main {
     margin-bottom: 80px;
     text-align: center;
@@ -1276,6 +1299,13 @@ button,
         font-size: 16px;
         line-height: 26px;
     }
+}
+
+.heading-main__title--white,
+.heading-main__description--white {
+    position: relative;
+    z-index: 1;
+    color: #fff;
 }
 
 .heading-sub {
@@ -2286,6 +2316,11 @@ button,
         opacity: 1;
     }
 }
+@media only screen and (max-width: 767px) {
+    .filter-cards__img-wrap {
+        height: 240px;
+    }
+}
 
 .filter-cards__img {
     width: 100%;
@@ -2309,6 +2344,12 @@ button,
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
 }
+@media only screen and (max-width: 1024px) {
+    .filter-cards__overlay {
+        left: 0;
+        background-color: rgba(64, 64, 64, 0);
+    }
+}
 
 .filter-cards__btn {
     position: absolute;
@@ -2322,10 +2363,26 @@ button,
     -webkit-transition-delay: 0.6s;
             transition-delay: 0.6s;
 }
+@media only screen and (max-width: 1024px) {
+    .filter-cards__btn {
+        top: auto;
+        left: auto;
+        right: 20px;
+        bottom: 12px;
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        opacity: 1;
+    }
+}
 
 .filter-cards__icon {
     font-size: 45px;
     color: #fff;
+}
+@media only screen and (max-width: 1024px) {
+    .filter-cards__icon {
+        font-size: 25px;
+    }
 }
 
 .filter-cards-meta {
@@ -2578,4 +2635,164 @@ button,
     .blog__btn--show-more {
         margin-bottom: 0;
     }
+}
+
+.testimonials__container {
+    max-width: 1180px;
+    padding-top: 20px;
+}
+
+.testimonials__wrapper {
+    margin-bottom: 78px;
+}
+@media only screen and (max-width: 1024px) {
+    .testimonials__wrapper {
+        margin-bottom: 58px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .testimonials__wrapper {
+        margin-bottom: 38px;
+    }
+}
+
+.testimonials__slide {
+    padding: 0 20px;
+}
+@media only screen and (max-width: 767px) {
+    .testimonials__slide {
+        padding: 0;
+    }
+}
+
+.testimonials__item {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.testimonials__meta {
+    padding: 20px;
+}
+
+.testimonials__icon {
+    margin-top: -12px;
+    margin-bottom: 11px;
+    font-size: 54px;
+}
+
+.testimonials__description {
+    text-align: center;
+}
+
+.testimonials__wave-icon {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.testimonials-social__inner {
+    padding: 22px 20px 16px;
+    position: relative;
+    text-align: center;
+    background-color: #007cc7;
+}
+
+.testimonials-social__img-wrap {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -73px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+@media only screen and (min-width: 1025px) {
+    .no-touch .testimonials-social__img-wrap:hover .testimonials-social__img {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+}
+
+.testimonials-social__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.testimonials-social__name {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.testimonials-social__profile {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.testimonials-social__icon-wrap {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.testimonials-social__link {
+    margin: 0 7.5px;
+}
+
+.testimonials-social__icon {
+    font-size: 14px;
+}
+
+.testimonials__btn-prev,
+.testimonials__btn-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: calc(50% + 60px);
+    z-index: 1;
+    display: none;
+}
+@media only screen and (min-width: 1025px) {
+    .testimonials__btn-prev,
+.testimonials__btn-next {
+        display: inline-block;
+    }
+}
+
+.testimonials__btn-prev {
+    left: 8px;
+}
+
+.testimonials__btn-next {
+    right: 8px;
+}
+
+.testimonials__btn-icon {
+    font-size: 43px;
+    color: #fff;
+}
+
+.testimonials__btn-icon--small-left,
+.testimonials__btn-icon--small-right {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: calc(50% - 3px);
+    font-size: 22px;
+}
+
+.testimonials__btn-icon--small-left {
+    right: 5px;
+}
+
+.testimonials__btn-icon--small-right {
+    left: 5px;
 }

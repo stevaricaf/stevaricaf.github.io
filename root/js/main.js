@@ -21,6 +21,7 @@ let app = {
 		functions.like();
 		functions.sliderTheme();
 		functions.blogSlice();
+		functions.testimonialsSlider();
 
 	}
 };

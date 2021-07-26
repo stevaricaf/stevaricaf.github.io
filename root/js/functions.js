@@ -110,25 +110,82 @@ module.exports = {
 	},
 
 	blogSlice: function() {
-		$('.blog__item').slice(0, 4).css('display', 'flex');
 
-		$('.blog__btn--show-more').on('click', function() {
-			$('.blog__item:hidden').slice(0, 4).slideDown(300).css('display', 'flex');
+		if (window.matchMedia('screen and (min-width: 1025px)').matches) {
+			$('.blog__item').slice(0, 8).css('display', 'flex');
 
-			if ($('.blog__item').length > 4) {
-				$('.blog__btn--show-less').show();
-			}
+			$('.blog__btn--show-more').on('click', function() {
+				$('.blog__item:hidden').slice(0, 4).slideDown(300).css('display', 'flex');
+	
+				if ($('.blog__item').length > 8) {
+					$('.blog__btn--show-less').show();
+				}
+				
+				if ($('.blog__item:hidden').length == 0) {
+					$('.blog__btn--show-more').hide();
+				}
+	
+			});
 			
-			if ($('.blog__item:hidden').length == 0) {
-				$('.blog__btn--show-more').hide();
-			}
-
-		});
+			$('.blog__btn--show-less').on('click', function() {
+				$('.blog__item').slice(8).slideUp(300);
+				$('.blog__btn--show-less').hide();
+				$('.blog__btn--show-more').show();
+			});
+		}
 		
-		$('.blog__btn--show-less').on('click', function() {
-			$('.blog__item').slice(4).slideUp(300);
-			$('.blog__btn--show-less').hide();
-			$('.blog__btn--show-more').show();
+		if (window.matchMedia('screen and (max-width: 1024px)').matches) {
+			console.log('works');
+			$('.blog__item').slice(0, 4).css('display', 'flex');
+
+			$('.blog__btn--show-more').on('click', function() {
+				$('.blog__item:hidden').slice(0, 4).slideDown(300).css('display', 'flex');
+	
+				if ($('.blog__item').length > 4) {
+					$('.blog__btn--show-less').show();
+				}
+				
+				if ($('.blog__item:hidden').length == 0) {
+					$('.blog__btn--show-more').hide();
+				}
+	
+			});
+
+			$('.blog__btn--show-less').on('click', function() {
+				$('.blog__item').slice(4).slideUp(300);
+				$('.blog__btn--show-less').hide();
+				$('.blog__btn--show-more').show();
+			});
+		}
+
+	},
+
+	testimonialsSlider: function() {
+		new Swiper('.testimonials__container', {
+			speed: 1000,
+			slidesPerView: 1,
+			spaceBetween: 40,
+			pagination: {
+				el: '.testimonials__pagination',
+				type: 'bullets',
+				bulletElement: 'button',
+				clickable: true
+			},
+			simulateTouch: false,
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 0,
+				},
+				1025: {
+					slidesPerView: 3,
+					spaceBetween: 0,
+					navigation: {
+						nextEl: '.testimonials__btn-next',
+						prevEl: '.testimonials__btn-prev'
+					},
+				}
+			}
 		});
 	}
 

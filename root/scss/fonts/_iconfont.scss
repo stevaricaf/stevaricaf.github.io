@@ -24,50 +24,59 @@
 @function font-char($filename) {
 	$char: "";
 
-	@if $filename == icon-display {
+	@if $filename == icon-chevron-left {
 		$char: "\E001";
 	}
-	@if $filename == icon-facebook {
+	@if $filename == icon-chevron-right {
 		$char: "\E002";
 	}
-	@if $filename == icon-github {
+	@if $filename == icon-display {
 		$char: "\E003";
 	}
-	@if $filename == icon-google {
+	@if $filename == icon-facebook {
 		$char: "\E004";
 	}
-	@if $filename == icon-heart-empty {
+	@if $filename == icon-github {
 		$char: "\E005";
 	}
-	@if $filename == icon-heart-filled {
+	@if $filename == icon-google {
 		$char: "\E006";
 	}
-	@if $filename == icon-key {
+	@if $filename == icon-heart-empty {
 		$char: "\E007";
 	}
-	@if $filename == icon-leaf {
+	@if $filename == icon-heart-filled {
 		$char: "\E008";
 	}
-	@if $filename == icon-mobile {
+	@if $filename == icon-key {
 		$char: "\E009";
 	}
-	@if $filename == icon-night {
+	@if $filename == icon-leaf {
 		$char: "\E00A";
 	}
-	@if $filename == icon-pencil {
+	@if $filename == icon-mobile {
 		$char: "\E00B";
 	}
-	@if $filename == icon-seo {
+	@if $filename == icon-night {
 		$char: "\E00C";
 	}
-	@if $filename == icon-sun {
+	@if $filename == icon-pencil {
 		$char: "\E00D";
 	}
-	@if $filename == icon-twitter {
+	@if $filename == icon-quotation {
 		$char: "\E00E";
 	}
-	@if $filename == icon-zoom-in {
+	@if $filename == icon-seo {
 		$char: "\E00F";
+	}
+	@if $filename == icon-sun {
+		$char: "\E010";
+	}
+	@if $filename == icon-twitter {
+		$char: "\E011";
+	}
+	@if $filename == icon-zoom-in {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -84,6 +93,12 @@
 	}
 }
 
+.font-icon-chevron-left {
+	@include font(icon-chevron-left);
+}
+.font-icon-chevron-right {
+	@include font(icon-chevron-right);
+}
 .font-icon-display {
 	@include font(icon-display);
 }
@@ -116,6 +131,9 @@
 }
 .font-icon-pencil {
 	@include font(icon-pencil);
+}
+.font-icon-quotation {
+	@include font(icon-quotation);
 }
 .font-icon-seo {
 	@include font(icon-seo);

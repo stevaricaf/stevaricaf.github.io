@@ -1,0 +1,138 @@
+// ---------- Testimonials ---------- //
+
+.testimonials__container {
+    max-width: 1180px;
+    padding-top: 20px;
+}
+
+.testimonials__wrapper {
+    margin-bottom: 78px;
+    @include breakpoint(touch) {
+        margin-bottom: 58px;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 38px;
+    }
+}
+
+.testimonials__slide {
+    padding: 0 20px;
+    @include breakpoint(phone) {
+        padding: 0;
+    }
+}
+
+.testimonials__item {
+    @extend %box-shadow;
+    width: 100%;
+    position: relative;
+    background-color: $white;
+}
+
+.testimonials__meta {
+    padding: 20px;
+}
+
+.testimonials__icon {
+    margin-top: -12px;
+    margin-bottom: 11px;
+    font-size: 54px;
+}
+
+.testimonials__description {
+    text-align: center;
+}
+
+.testimonials__wave-icon {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.testimonials-social__inner {
+    padding: 22px 20px 16px;
+    position: relative;
+    text-align: center;
+    background-color: $blue;
+}
+
+.testimonials-social__img-wrap {
+    @include align(absolute, x);
+    top: -73px;
+    width: 80px;
+    height: 80px;
+    border: 5px solid $white;
+    border-radius: 50%;
+    overflow: hidden;
+    @include hover {
+        .testimonials-social__img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.testimonials-social__img {
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.testimonials-social__name {
+    margin-bottom: 5px;
+    color: $white;
+}
+
+.testimonials-social__profile {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: $white;
+}
+
+.testimonials-social__icon-wrap {
+    justify-content: center;
+}
+
+.testimonials-social__link {
+    margin: 0 7.5px;
+}
+
+.testimonials-social__icon {
+    font-size: 14px;
+}
+
+.testimonials__btn-prev,
+.testimonials__btn-next {
+    @include align(absolute, y);
+    top: calc(50% + 60px);
+    z-index: 1;
+    display: none;
+    @include breakpoint(desktop) {
+        display: inline-block;
+    }
+}
+
+.testimonials__btn-prev {
+    left: 8px;
+}
+
+.testimonials__btn-next {
+    right: 8px;
+}
+
+.testimonials__btn-icon {
+    font-size: 43px;
+    color: $white;
+}
+
+.testimonials__btn-icon--small-left,
+.testimonials__btn-icon--small-right {
+    @include align(absolute, y);
+    top: calc(50% - 3px);
+    font-size: 22px;
+}
+
+.testimonials__btn-icon--small-left {
+    right: 5px;
+}
+
+.testimonials__btn-icon--small-right {
+    left: 5px;
+}
