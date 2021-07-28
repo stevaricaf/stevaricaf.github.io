@@ -29,7 +29,9 @@
 // ---------- Components ---------- //
 
 @import 'components/button',
-        'components/modular-class';
+        'components/modular-class',
+        'components/input',
+        'components/textarea';
 
 // ---------- Layout ---------- //
 
@@ -44,4 +46,5 @@
         'templates/modules/portfolio',
         'templates/modules/slider-theme',
         'templates/modules/blog',
-        'templates/modules/testimonials';
+        'templates/modules/testimonials',
+        'templates/modules/contact';

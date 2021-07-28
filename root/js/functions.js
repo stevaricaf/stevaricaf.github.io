@@ -187,6 +187,17 @@ module.exports = {
 				}
 			}
 		});
+	},
+
+	labelAnimate: function() {
+		$('.form__input, .form__textarea').bind('focus blur', function() {
+			$(this).siblings('.form__label').toggleClass('active');
+
+			if ($(this).val().length !== 0) {
+				$(this).siblings('.form__label').addClass('active');
+			}
+
+		});
 	}
 
 };

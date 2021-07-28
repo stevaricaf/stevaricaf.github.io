@@ -24,59 +24,74 @@
 @function font-char($filename) {
 	$char: "";
 
-	@if $filename == icon-chevron-left {
+	@if $filename == icon-briefcase {
 		$char: "\E001";
 	}
-	@if $filename == icon-chevron-right {
+	@if $filename == icon-chat {
 		$char: "\E002";
 	}
-	@if $filename == icon-display {
+	@if $filename == icon-chevron-left {
 		$char: "\E003";
 	}
-	@if $filename == icon-facebook {
+	@if $filename == icon-chevron-right {
 		$char: "\E004";
 	}
-	@if $filename == icon-github {
+	@if $filename == icon-display {
 		$char: "\E005";
 	}
-	@if $filename == icon-google {
+	@if $filename == icon-facebook {
 		$char: "\E006";
 	}
-	@if $filename == icon-heart-empty {
+	@if $filename == icon-github {
 		$char: "\E007";
 	}
-	@if $filename == icon-heart-filled {
+	@if $filename == icon-google {
 		$char: "\E008";
 	}
-	@if $filename == icon-key {
+	@if $filename == icon-heart-empty {
 		$char: "\E009";
 	}
-	@if $filename == icon-leaf {
+	@if $filename == icon-heart-filled {
 		$char: "\E00A";
 	}
-	@if $filename == icon-mobile {
+	@if $filename == icon-key {
 		$char: "\E00B";
 	}
-	@if $filename == icon-night {
+	@if $filename == icon-leaf {
 		$char: "\E00C";
 	}
-	@if $filename == icon-pencil {
+	@if $filename == icon-location {
 		$char: "\E00D";
 	}
-	@if $filename == icon-quotation {
+	@if $filename == icon-mail {
 		$char: "\E00E";
 	}
-	@if $filename == icon-seo {
+	@if $filename == icon-mobile {
 		$char: "\E00F";
 	}
-	@if $filename == icon-sun {
+	@if $filename == icon-night {
 		$char: "\E010";
 	}
-	@if $filename == icon-twitter {
+	@if $filename == icon-pencil {
 		$char: "\E011";
 	}
-	@if $filename == icon-zoom-in {
+	@if $filename == icon-quotation {
 		$char: "\E012";
+	}
+	@if $filename == icon-seo {
+		$char: "\E013";
+	}
+	@if $filename == icon-sun {
+		$char: "\E014";
+	}
+	@if $filename == icon-twitter {
+		$char: "\E015";
+	}
+	@if $filename == icon-user {
+		$char: "\E016";
+	}
+	@if $filename == icon-zoom-in {
+		$char: "\E017";
 	}
 
 	@return $char;
@@ -93,6 +108,12 @@
 	}
 }
 
+.font-icon-briefcase {
+	@include font(icon-briefcase);
+}
+.font-icon-chat {
+	@include font(icon-chat);
+}
 .font-icon-chevron-left {
 	@include font(icon-chevron-left);
 }
@@ -123,6 +144,12 @@
 .font-icon-leaf {
 	@include font(icon-leaf);
 }
+.font-icon-location {
+	@include font(icon-location);
+}
+.font-icon-mail {
+	@include font(icon-mail);
+}
 .font-icon-mobile {
 	@include font(icon-mobile);
 }
@@ -143,6 +170,9 @@
 }
 .font-icon-twitter {
 	@include font(icon-twitter);
+}
+.font-icon-user {
+	@include font(icon-user);
 }
 .font-icon-zoom-in {
 	@include font(icon-zoom-in);

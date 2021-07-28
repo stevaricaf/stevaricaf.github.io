@@ -1,0 +1,172 @@
+// ---------- Contact ---------- //
+
+.contact {
+    @extend %box-shadow;
+    max-width: 984px;
+    margin: 77px auto 0;
+    display: flex;
+    @include breakpoint(phone) {
+        max-width: 100%;
+        margin-top: 57px;
+        display: block;
+    }
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 284px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: $blue;
+    @include breakpoint(phone) {
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
+
+.contact-info__title {
+    margin-bottom: 70px;
+    color: $white;
+    @include breakpoint(phone) {
+        margin-bottom: 30px;
+    }
+}
+
+.contact-info__data-wrap {
+    margin-left: -2px;
+}
+
+.contact-info__data {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    @include breakpoint(phone) {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
+
+.contact-info__meta {
+    margin-left: 6px;
+    @include breakpoint(phone) {
+        text-align: left;
+    }
+}
+
+.contact-info__meta--mg-left {
+    margin-top: -1px;
+    margin-left: 10px;
+}
+
+.contact-info__icon {
+    margin-top: 3px;
+    color: $white;
+}
+
+.contact-info__icon--mod {
+    margin-top: 0;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+.contact-info__text {
+    margin-bottom: 2px;
+    color: $white;
+}
+
+.contact-social__social {
+    margin-top: auto;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    @include breakpoint(phone) {
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
+
+.contact-form__title {
+    margin-bottom: 30px;
+}
+
+.form {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(phone) {
+        width: 100%;
+        margin-left: 0;
+        display: block;
+    }
+}
+
+.form__item {
+    width: calc(50% - 40px);
+    height: 40px;
+    margin: 20px;
+    position: relative;
+    @include breakpoint(phone) {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+.form__item--height-auto {
+    height: auto;
+}
+
+.form__item--full-width {
+    width: 100%;
+}
+
+.form__icon {
+    @include align(absolute, y);
+    top: calc(50% + 2px);
+    left: 10px;
+}
+
+.form__label {
+    @include align(absolute, y);
+    left: 40px;
+    transition: 0.3s ease-in-out;
+    &.active {
+        top: -12px;
+        left: 5px;
+        font-size: 10px;
+        color: $gray;
+        @include breakpoint(phone) {
+            top: -8px;
+        }
+    }
+}
+
+.form__label--pos-y {
+    &.active {
+        top: -17px;
+        @include breakpoint(phone) {
+            top: -15px;
+        }
+    }
+}
+
+.form__label--position,
+.form__icon--position {
+    top: 10px;
+    transform: translate(0);
+}
+
+.form__btn {
+    margin-top: 16px;
+    margin-left: 20px;
+    @include breakpoint(phone) {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+}

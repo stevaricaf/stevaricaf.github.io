@@ -1,0 +1,22 @@
+// ---------- Input ---------- //
+
+input {
+    font-family: $font-default;
+    border: 0;
+    background-color: $smokeWhite;
+}
+
+label {
+    font-family: $font-default;
+    color: $nero;
+}
+
+.input {
+    @extend %box-shadow;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 10px;
+    display: inline-block;
+    color: $nero;
+}

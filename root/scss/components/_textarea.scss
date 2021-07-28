@@ -1,0 +1,15 @@
+// ---------- Textarea ---------- //
+
+textarea {
+    font-family: $font-default;
+    resize: none;
+    border: 0;
+    background-color: transparent;
+}
+
+.textarea {
+    @extend %box-shadow;
+    width: 100%;
+    height: 120px;
+    padding: 10px 40px;
+}
