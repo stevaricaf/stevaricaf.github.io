@@ -25,7 +25,7 @@
         flex-basis: 100%;
     }
     @include breakpoint(phone) {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
@@ -98,8 +98,11 @@
     }
 }
 
-.footer-social__social {
+.footer-social__icon-wrap {
     margin-top: 10px;
+    @include breakpoint(phone) {
+        margin-top: 30px;
+    }
 }
 
 .footer-social__icon {

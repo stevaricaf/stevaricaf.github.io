@@ -38,6 +38,10 @@
 
 .contact-info__data-wrap {
     margin-left: -2px;
+    @include breakpoint(phone) {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .contact-info__data {
@@ -46,6 +50,7 @@
     align-items: center;
     @include breakpoint(phone) {
         margin-bottom: 20px;
+        flex-direction: column;
         justify-content: center;
     }
 }
@@ -64,17 +69,26 @@
 
 .contact-info__icon {
     color: $white;
+    @include breakpoint(phone) {
+        margin-bottom: 10px;
+    }
 }
 
 .contact-info__icon--mod {
     margin-top: 0;
     margin-left: 3px;
     font-size: 14px;
+    @include breakpoint(phone) {
+        margin-left: 0;
+    }
 }
 
 .contact-info__text {
     margin-bottom: 2px;
     color: $white;
+    @include breakpoint(phone) {
+        text-align: center;
+    }
 }
 
 .contact-social__icon-wrap {
@@ -163,7 +177,7 @@
 }
 
 .form__btn {
-    margin-top: 11px;
+    margin-top: 15px;
     margin-left: 20px;
     @include breakpoint(phone) {
         margin-top: 0;

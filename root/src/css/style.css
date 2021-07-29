@@ -1533,6 +1533,7 @@ label {
 
 textarea {
     font-family: "Roboto";
+    vertical-align: bottom;
     resize: none;
     border: 0;
     background-color: transparent;
@@ -2005,7 +2006,7 @@ textarea {
 }
 @media only screen and (max-width: 767px) {
     .footer__item--logo {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
@@ -2101,8 +2102,13 @@ textarea {
     }
 }
 
-.footer-social__social {
+.footer-social__icon-wrap {
     margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {
+    .footer-social__icon-wrap {
+        margin-top: 30px;
+    }
 }
 
 .footer-social__icon {
@@ -3132,6 +3138,12 @@ textarea {
 .contact-info__data-wrap {
     margin-left: -2px;
 }
+@media only screen and (max-width: 767px) {
+    .contact-info__data-wrap {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
 
 .contact-info__data {
     margin-bottom: 29px;
@@ -3147,6 +3159,11 @@ textarea {
 @media only screen and (max-width: 767px) {
     .contact-info__data {
         margin-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
@@ -3171,16 +3188,31 @@ textarea {
 .contact-info__icon {
     color: #fff;
 }
+@media only screen and (max-width: 767px) {
+    .contact-info__icon {
+        margin-bottom: 10px;
+    }
+}
 
 .contact-info__icon--mod {
     margin-top: 0;
     margin-left: 3px;
     font-size: 14px;
 }
+@media only screen and (max-width: 767px) {
+    .contact-info__icon--mod {
+        margin-left: 0;
+    }
+}
 
 .contact-info__text {
     margin-bottom: 2px;
     color: #fff;
+}
+@media only screen and (max-width: 767px) {
+    .contact-info__text {
+        text-align: center;
+    }
 }
 
 .contact-social__icon-wrap {
@@ -3290,7 +3322,7 @@ textarea {
 }
 
 .form__btn {
-    margin-top: 11px;
+    margin-top: 15px;
     margin-left: 20px;
 }
 @media only screen and (max-width: 767px) {
