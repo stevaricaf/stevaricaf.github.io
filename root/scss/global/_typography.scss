@@ -71,8 +71,9 @@ p {
 }
 
 .icon {
-    display: inline-block;
+    display: flex;
     font-size: 20px;
     color: $nero;
+    vertical-align: bottom;
     line-height: normal;
 }

@@ -1,0 +1,29 @@
+// ---------- Social ---------- //
+
+.social__box {
+    margin-left: -4px;
+    display: flex;
+    align-items: center;
+    @include breakpoint(phone) {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+.social__link {
+    margin-right: 19.5px;
+    display: inline-block;
+    @include hover {
+        .social__icon {
+            color: $nero;
+        }
+    }
+    @include breakpoint(phone) {
+        margin: 0 15px;
+    }
+}
+
+.social__icon {
+    color: $white;
+    transition: 0.3s ease-in-out;
+}

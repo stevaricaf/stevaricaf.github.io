@@ -35,7 +35,7 @@
 
 .testimonials__icon {
     margin-top: -12px;
-    margin-bottom: 11px;
+    margin-bottom: 25px;
     font-size: 54px;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .testimonials-social__inner {
-    padding: 22px 20px 16px;
+    padding: 22px 20px 20px;
     position: relative;
     text-align: center;
     background-color: $blue;
@@ -101,7 +101,7 @@
 .testimonials__btn-prev,
 .testimonials__btn-next {
     @include align(absolute, y);
-    top: calc(50% + 60px);
+    top: calc(50% + 54px);
     z-index: 1;
     display: none;
     @include breakpoint(desktop) {
@@ -125,7 +125,7 @@
 .testimonials__btn-icon--small-left,
 .testimonials__btn-icon--small-right {
     @include align(absolute, y);
-    top: calc(50% - 3px);
+    top: 50%;
     font-size: 22px;
 }
 

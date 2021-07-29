@@ -67,3 +67,19 @@ button,
         background-color: $gray;
     }
 }
+
+.btn--border {
+    padding: 8px 18px;
+    margin: 0 15px;
+    color: $blue;
+    letter-spacing: normal;
+    border: 2px solid $blue;
+    &.active {
+        color: $white;
+        background-color: $blue;
+    }
+    @include hover {
+        color: $white;
+        background-color: $blue;
+    }
+}

@@ -10,7 +10,7 @@
     &.active {
         @extend %box-shadow;
         background-color: $white;
-        .wrap--pd-40 {
+        .wrap--padding-40 {
             padding: 20px;
         }
     }
@@ -128,24 +128,22 @@
 
 .change-mode__icon {
     @include align(absolute, xy);
-    top: calc(50% + 2px);
     font-size: 18px;
     transition: 0.3s ease-in-out;
 }
 
-.change-mode__icon--night {
+.change-mode__icon--dark {
     display: none;
     &.active {
-        display: block;
+        display: flex;
     }
 }
 
-.change-mode__icon--sun {
+.change-mode__icon--light {
     display: none;
-    top: calc(50% + 3px);
     left: calc(50% + 0.5px);
     &.active {
-        display: block;
+        display: flex;
     }
 }
 

@@ -37,7 +37,7 @@ function iconToFont() {
         formats: ['ttf', 'woff', 'woff2'],
         // Normalizing font width and height
         normalize: true,
-        // Make fixed font size
+        // // Make fixed font size
         fontHeight: 1024,
         // Center Horizontaly
         centerHorizontally: true,

@@ -60,8 +60,8 @@ module.exports = {
 
 	changeMode: function() {
 		$('.change-mode').on('click', function() {
-			$('.change-mode__icon--night').toggleClass('active');
-			$('.change-mode__icon--sun').toggleClass('active');
+			$('.change-mode__icon--dark').toggleClass('active');
+			$('.change-mode__icon--light').toggleClass('active');
 			$('body').toggleClass('dark-mode');
 		});
 	},

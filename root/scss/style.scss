@@ -28,15 +28,19 @@
 
 // ---------- Components ---------- //
 
-@import 'components/button',
-        'components/modular-class',
+@import 'components/modular-class',
+        'components/button',
+        'components/heading',
+        'components/social',
         'components/input',
-        'components/textarea';
+        'components/textarea',
+        'components/divider';
 
 // ---------- Layout ---------- //
 
 @import 'templates/layout/home',
-        'templates/layout/header';
+        'templates/layout/header',
+        'templates/layout/footer';
 
 // ---------- Modules ---------- //
 

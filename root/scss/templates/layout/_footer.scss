@@ -1,0 +1,136 @@
+// ---------- Footer ---------- //
+
+.footer__item {
+    padding-right: 20px;
+    flex-basis: 25%;
+    @include breakpoint(touch) {
+        flex-basis: 33%;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 30px;
+        padding-right: 0;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer__item--logo {
+    @include breakpoint(touch) {
+        margin-bottom: 40px;
+        flex-basis: 100%;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 30px;
+    }
+}
+
+.footer__item--flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title {
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.footer__title--margin-b-sm {
+    margin-bottom: 15px;
+}
+
+.footer__title--margin-b-20 {
+    margin-bottom: 20px;
+}
+
+.footer__description {
+    max-width: 240px;
+    @include breakpoint(phone) {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.footer__link-wrap {
+    width: calc(170px + 10px);
+    margin-left: -5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(phone) {
+        margin: 0 auto 5px;
+    }
+}
+
+.footer__link-img {
+    @extend %box-shadow;
+    height: 50px;
+    margin: 5px;
+    display: block;
+    flex-basis: calc(50% - 10px);
+    overflow: hidden;
+    @include hover {
+        .footer__img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.footer__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.footer__link {
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: $blue;
+    transition: 0.3s ease-in-out;
+    @include hover {
+        color: $darkBlue;
+    }
+}
+
+.footer-social__social {
+    margin-top: 10px;
+}
+
+.footer-social__icon {
+    color: $blue;
+}
+
+.copyright {
+    position: relative;
+}
+
+.copyright__description {
+    width: 100%;
+    font-weight: 300;
+    line-height: normal;
+    > span {
+        font-weight: 500;
+        color: $blue;
+    }
+    @include breakpoint(phone) {
+        margin-bottom: 10px;
+        font-size: 12px;
+        text-align: center;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.copyright__description--text-right {
+    text-align: right;
+    @include breakpoint(phone) {
+        text-align: center;
+    }
+}

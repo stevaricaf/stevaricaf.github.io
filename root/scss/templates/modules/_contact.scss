@@ -2,32 +2,34 @@
 
 .contact {
     @extend %box-shadow;
-    max-width: 984px;
+    max-width: 1000px;
     margin: 77px auto 0;
     display: flex;
     @include breakpoint(phone) {
-        max-width: 100%;
-        margin-top: 57px;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-top: 0;
         display: block;
+        box-shadow: none;
     }
 }
 
 .contact-info {
     width: 100%;
-    max-width: 284px;
+    max-width: 300px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     background-color: $blue;
     @include breakpoint(phone) {
         max-width: 100%;
-        padding: 40px 20px;
+        padding: 30px 20px;
         text-align: center;
     }
 }
 
 .contact-info__title {
-    margin-bottom: 70px;
+    margin-bottom: 67px;
     color: $white;
     @include breakpoint(phone) {
         margin-bottom: 30px;
@@ -39,7 +41,7 @@
 }
 
 .contact-info__data {
-    margin-bottom: 25px;
+    margin-bottom: 29px;
     display: flex;
     align-items: center;
     @include breakpoint(phone) {
@@ -61,7 +63,6 @@
 }
 
 .contact-info__icon {
-    margin-top: 3px;
     color: $white;
 }
 
@@ -76,7 +77,7 @@
     color: $white;
 }
 
-.contact-social__social {
+.contact-social__icon-wrap {
     margin-top: auto;
 }
 
@@ -86,13 +87,13 @@
     padding: 50px;
     @include breakpoint(phone) {
         max-width: 100%;
-        padding: 40px 20px;
+        padding: 30px 20px 0;
         text-align: center;
     }
 }
 
 .contact-form__title {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .form {
@@ -109,8 +110,8 @@
 
 .form__item {
     width: calc(50% - 40px);
-    height: 40px;
-    margin: 20px;
+    height: 50px;
+    margin: 15px 20px;
     position: relative;
     @include breakpoint(phone) {
         width: 100%;
@@ -128,7 +129,6 @@
 
 .form__icon {
     @include align(absolute, y);
-    top: calc(50% + 2px);
     left: 10px;
 }
 
@@ -163,10 +163,10 @@
 }
 
 .form__btn {
-    margin-top: 16px;
+    margin-top: 11px;
     margin-left: 20px;
     @include breakpoint(phone) {
-        margin-top: 8px;
+        margin-top: 0;
         margin-left: 0;
     }
 }

@@ -1,21 +1,21 @@
 // ---------- Services ---------- //
 
-.services__title {
+.services-heading__title {
     color: $white;
 }
 
-.services-cards__item {
+.services__item {
     padding: 30px 30px 26px;
     text-align: center;
     transition: 0.3s ease-in-out;
     @include hover {
         background-color: $blue;
-        .services-cards__rectangle {
+        .services__rectangle {
             border-color: $white;
         }
-        .services-cards__icon,
-        .services-cards__title,
-        .services-cards__description {
+        .services__icon,
+        .services__title,
+        .services__description {
             color: $white;
         }
     }
@@ -24,7 +24,7 @@
     }
 }
 
-.services-cards__rectangle {
+.services__rectangle {
     width: 80px;
     height: 80px;
     margin: 0 auto 25px;
@@ -34,21 +34,20 @@
     transition: 0.3s ease-in-out;
 }
 
-.services-cards__icon {
+.services__icon {
     @include align(absolute, xy);
-    top: calc(50% + 4px);
-    font-size: 30px;
+    font-size: 31px;
     color: $blue;
     transition: 0.3s ease-in-out;
 }
 
-.services-cards__title {
+.services__title {
     margin-bottom: 22px;
     text-transform: capitalize;
     transition: 0.3s ease-in-out;
 }
 
-.services-cards__description {
+.services__description {
     text-align: center;
     transition: 0.3s ease-in-out;
 }

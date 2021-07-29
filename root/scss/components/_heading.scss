@@ -1,0 +1,59 @@
+// ---------- Heading ---------- //
+
+.heading-main {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.heading-main--margin-b-57 {
+    margin-bottom: 57px;
+    @include breakpoint(phone) {
+        margin-bottom: 37px;
+    }
+}
+
+.heading-main__title {
+    margin-bottom: 27px;
+    @include breakpoint(phone) {
+        margin-bottom: 17px;
+    }
+}
+
+.heading-main__description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    line-height: 28px;
+    text-align: center;
+    @include breakpoint(touch) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.heading-main__title--white,
+.heading-main__description--white {
+    position: relative;
+    z-index: 1;
+    color: $white;
+}
+
+.heading-sub {
+    position: relative;
+    background-color: $blue;
+    text-align: center;
+    &::after {
+        @include align(absolute, x);
+        bottom: -17px;
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        border-top: 17px solid $blue;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+    }
+}

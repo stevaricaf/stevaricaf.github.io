@@ -23,6 +23,7 @@
         margin-bottom: 17px;
     }
     @include breakpoint(phone) {
+        margin-left: 20px;
         margin-bottom: 7px;
     }
 }
