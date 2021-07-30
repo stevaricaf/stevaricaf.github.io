@@ -9991,9 +9991,11 @@
         });
       },
       loader: function loader() {
+        $('.loader').fadeOut('slow');
         setTimeout(function () {
-          $('.loader').fadeOut('slow');
-          $('body').css('overflow', 'hidden');
+          if ($('.loader:visible')) {
+            $('.loader').fadeOut('slow');
+          }
         }, 2000);
       }
     };
