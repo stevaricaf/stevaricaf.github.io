@@ -43,7 +43,7 @@ let app = {
 $(function() {
 
 	app.init();
-
+	
 	$(window).on('load', function() {
 		app.winLoad();
 	});
