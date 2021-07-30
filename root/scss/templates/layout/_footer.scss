@@ -33,6 +33,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @include breakpoint(phone) {
+        align-items: center;
+    }
 }
 
 .footer__title {

@@ -10007,7 +10007,7 @@
 
         AOS.init({
           offset: 0,
-          duration: 800,
+          duration: 500,
           easing: 'ease-in-out'
         });
         functions.ripple();
