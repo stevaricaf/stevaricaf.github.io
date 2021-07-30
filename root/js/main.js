@@ -12,6 +12,12 @@ let app = {
 			$('html').addClass('no-touch');
 		}
 
+		AOS.init({
+			offset: 0,
+			duration: 800,
+			easing: 'ease-in-out'
+		});
+
 		// Call your functions here
 		functions.ripple();
 		functions.stickyHeader();
@@ -23,10 +29,23 @@ let app = {
 		functions.blogSlice();
 		functions.testimonialsSlider();
 		functions.labelAnimate();
+		functions.smoothScroll();
 
+	},
+	winLoad: function() {
+
+		// Call your functions here
+		console.log('Window loaded');
+		
 	}
 };
 
 $(function() {
+
 	app.init();
+
+	$(window).on('load', function() {
+		app.winLoad();
+	});
+
 });

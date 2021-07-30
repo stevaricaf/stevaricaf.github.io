@@ -135,7 +135,6 @@ module.exports = {
 		}
 		
 		if (window.matchMedia('screen and (max-width: 1024px)').matches) {
-			console.log('works');
 			$('.blog__item').slice(0, 4).css('display', 'flex');
 
 			$('.blog__btn--show-more').on('click', function() {
@@ -198,6 +197,16 @@ module.exports = {
 			}
 
 		});
-	}
+	},
+
+	smoothScroll: function() {
+        $('a[href^="#"]').on('click', function(e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - 80
+			}, 1500);
+        });
+    }
 
 };

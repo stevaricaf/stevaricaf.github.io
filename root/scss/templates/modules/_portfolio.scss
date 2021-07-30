@@ -2,20 +2,14 @@
 
 .filter {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
     @include breakpoint(touch) {
         margin-bottom: 40px;
     }
     @include breakpoint(phone) {
-        margin-bottom: 30px;
-    }
-}
-
-.filter__btn-wrap {
-    display: flex;
-    justify-content: center;
-    @include breakpoint(phone) {
         max-width: 200px;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         flex-direction: column;
     }
 }

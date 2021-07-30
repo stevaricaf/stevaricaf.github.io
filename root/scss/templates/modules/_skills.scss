@@ -167,18 +167,18 @@
     background-color: $white;
     border-radius: 25px;
     &--width-90 {
-        width: 90%;
+        max-width: 90%;
     }
     &--width-75 {
-        width: 75%;
+        max-width: 75%;
     }
     &--width-65 {
-        width: 65%;
+        max-width: 65%;
     }
     &--width-80 {
-        width: 80%;
+        max-width: 80%;
     }
     &--width-50 {
-        width: 50%;
+        max-width: 50%;
     }
 }
