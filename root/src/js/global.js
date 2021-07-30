@@ -10025,14 +10025,13 @@
         functions.labelAnimate();
         functions.smoothScroll();
       },
-      winLoad: function winLoad() {
-        functions.loader();
-      }
+      winLoad: function winLoad() {}
     };
     $(function () {
       app.init();
       $(window).on('load', function () {
         app.winLoad();
+        $('.loader').hide();
       });
     });
   }, {
