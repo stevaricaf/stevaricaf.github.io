@@ -9991,9 +9991,7 @@
         });
       },
       loader: function loader() {
-        setTimeout(function () {
-          $('.loader').remove();
-        }, 1000);
+        $('.loader').fadeOut('slow');
       }
     };
   }, {}],
