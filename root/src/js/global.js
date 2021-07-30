@@ -9992,8 +9992,8 @@
       },
       loader: function loader() {
         setTimeout(function () {
-          $('.loader').fadeOut('fast');
-        }, 1500);
+          $('.loader').remove();
+        }, 1000);
       }
     };
   }, {}],
@@ -10033,9 +10033,7 @@
     };
     $(function () {
       app.init();
-      $(window).on('load', function () {
-        app.winLoad();
-      });
+      app.winLoad();
     });
   }, {
     "./functions": 1

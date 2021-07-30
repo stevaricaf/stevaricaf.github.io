@@ -211,8 +211,8 @@ module.exports = {
 
 	loader: function() {
 		setTimeout(function() {
-			$('.loader').fadeOut('fast');
-		}, 1500);
+			$('.loader').remove();
+		}, 1000);
 	}
 
 };
