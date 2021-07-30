@@ -35,7 +35,7 @@ let app = {
 	winLoad: function() {
 
 		// Call your functions here
-		console.log('Window loaded');
+		functions.loader();
 		
 	}
 };

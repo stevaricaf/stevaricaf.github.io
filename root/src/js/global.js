@@ -9989,6 +9989,9 @@
             scrollTop: $($.attr(this, 'href')).offset().top - 80
           }, 1500);
         });
+      },
+      loader: function loader() {
+        $('.loader').hide();
       }
     };
   }, {}],
@@ -10023,7 +10026,7 @@
         functions.smoothScroll();
       },
       winLoad: function winLoad() {
-        console.log('Window loaded');
+        functions.loader();
       }
     };
     $(function () {

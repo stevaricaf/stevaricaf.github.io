@@ -207,6 +207,10 @@ module.exports = {
 				scrollTop: $($.attr(this, 'href')).offset().top - 80
 			}, 1500);
         });
-    }
+    },
+
+	loader: function() {
+		$('.loader').hide();
+	}
 
 };
