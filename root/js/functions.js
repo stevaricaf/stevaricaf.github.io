@@ -210,8 +210,6 @@ module.exports = {
     },
 
 	loader: function() {
-		$('.loader').fadeOut('fast');
-
 		setTimeout(function() {
 			$('.loader').fadeOut('fast');
 		}, 1500);

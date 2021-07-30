@@ -9991,7 +9991,6 @@
         });
       },
       loader: function loader() {
-        $('.loader').fadeOut('fast');
         setTimeout(function () {
           $('.loader').fadeOut('fast');
         }, 1500);
