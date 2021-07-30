@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+	<!-- SEO optimization -->
+	<meta name="owner" content="Stevan Stojić - STIVCODES">
+	<meta name="subject" content="Front-End Gulp 4 Starter Kit">
+	<meta name="description" content="Advanced Front-End Gulp 4 Starter Kit for modern web development">
+	<meta name="keywords" content="Front-End, Front-End-Starter-Kit, HTML, CSS, SASS, SCSS, JavaScript, EcmaScript, ES6, jQuery, Node, npm, Gulp, git">
+	<meta name="author" content="Stevan Stojić">
+	<!-- Robots -->
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="googlebot" content="noindex,nofollow">
+	<!-- main css file -->
+	<link rel="stylesheet" href="src/css/dist/style.min.css">
+	<!-- main js file -->
+	<script defer src="src/js/dist/global.min.js"></script>
+	<title>Gulp 4 Starter Kit</title>
+	<link href="favicon.ico" rel="icon" />
+</head>
+
+<body>
+	<div class="container">
+		<section id="loader" class="loader">
+			<div class="loader__wrap">
+				<svg class="circular" viewBox="25 25 50 50">
+					<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+				</svg>
+			</div>
+		</section>
+		<header id="header" class="header" role="banner">
+			<div class="wrap wrap--padding-40 wrap--flex-sb-center">
+				<a href="javascript:;" class="logo" data-aos-offset="120" data-aos="fade-right" data-aos-delay="1100" data-aos-easing="ease-in-sine">
+					<h4 class="logo__h4">Stiv<span>codes</span></h3>
+				</a>
+				<nav id="nav" class="nav" role="navigation">
+					<ul class="nav__list">
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2500" class="nav__item">
+							<a href="#home" class="nav__link">Home</a>
+						</li>
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2550" class="nav__item">
+							<a href="#about" class="nav__link">About</a>
+						</li>
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2600" class="nav__item">
+							<a href="#services" class="nav__link">Services</a>
+						</li>
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2650" class="nav__item">
+							<a href="#portfolio" class="nav__link">Portfolio</a>
+						</li>
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2700" class="nav__item">
+							<a href="#blog" class="nav__link">Blog</a>
+						</li>
+						<li data-aos="fade-down-left" data-aos-offset="120" data-aos-delay="2750" class="nav__item">
+							<a href="#contact" class="nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="change-mode" data-aos-offset="120" data-aos="zoom-in" data-aos-delay="2000">
+					<span class="icon font-icon-night change-mode__icon change-mode__icon--dark active"></span>
+					<span class="icon font-icon-sun change-mode__icon change-mode__icon--light"></span>
+				</button>
+				<button class="menu" data-aos-offset="120" data-aos="zoom-in" data-aos-delay="2000">
+					<span class="menu__line"></span>
+				</button>
+			</div>
+		</header>
+		<section id="home" class="container container--height-100vh" role="banner">
+			<div class="wrap wrap--height-100vh wrap--flex-center-y">
+				<div class="home">
+					<h1 class="home__title" data-aos="fade-right" data-aos-delay="1100">Hello</h1>
+					<p class="home__description" data-aos="fade-right" data-aos-delay="1500">I am <span>Stevan Stojić</span>, a professional Front-End Developer. I create modern and responsive websites for desktops, tablets and mobiles. Contact me and let's work together!</p>
+					<div class="home__btn-wrap" data-aos="fade-right" data-aos-delay="2000">
+						<a href="#contact" class="btn btn--blue home__btn home__btn--contact" role="button">Get in touch</a>
+						<a href="#portfolio" class="btn btn--gray home__btn home__btn--projects" role="button">View projects</a>
+					</div>
+				</div>
+				<img src="./././assets/images/dist/avatar-main.png" alt="Avatar of this website's creator" data-aos="opacity-right" data-aos-delay="300" class="home-avatar">
+			</div>
+		</section>
+		<main class="main" role="main">
+			<section id="about" class="container">
+				<div class="wrap wrap--flex wrap--flex-dir-col-rev">
+					<div class="about">
+						<h3 class="about__title" data-aos="fade-down">Who am i & what i do?</h3>
+						<div class="about__description-wrap">
+							<p class="about__description" data-aos="fade-right">I am computer programmer who specialize in website design and development. My duties include determining the structure and design of your web pages, striking a balance between functional and aesthetic design, and ensuring web design is optimized for touch devices.</p>
+							<p class="about__description" data-aos="fade-right">I specialize in making things for my clients. Most of the things I make are digital interfaces, but I also put effort into web design.</p>
+							<p class="about__description" data-aos="fade-right">I'll fulfill your ideas and suggestions, combine it with my expertise and create you a 'User-Friendly', 'Easy-to-Use', clean and memorable website that will leave a powerful impression on users.</p>
+						</div>
+						<div class="aos-wrap" data-aos="fade-up">
+							<a href="javascript:;" download="resume-17-07-21-b-w-edition" class="btn btn--blue about__btn">Download cv</a>
+						</div>
+					</div>
+					<div class="about__img-wrap">
+						<img src="./././assets/images/dist/about-devices.png" alt="All devices that can show responsive design" data-aos="fade-left" class="about__img">
+					</div>
+				</div>
+			</section>
+			<section id="services" class="container">
+				<div class="heading-sub services-heading" data-aos="fade-down">
+					<div class="wrap wrap--padding-50">
+						<h4 class="heading-sub__title services-heading__title" data-aos="fade-down">What can i offer for you</h4>
+					</div>
+				</div>
+				<div class="wrap wrap--padding-60">
+					<div class="flex-col services">
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-display services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Development</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-leaf services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Clean code</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-mobile services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Responsive</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-key services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Full support</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-pencil services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Crafted design</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+						<div class="flex-col__item-33 services__item">
+							<div class="aos-wrap" data-aos="fade-down">
+								<div class="services__rectangle" data-aos="zoom-in" data-aos-delay="300">
+									<span class="icon font-icon-seo services__icon"></span>
+								</div>
+								<h5 class="services__title" data-aos="zoom-in" data-aos-delay="600">Seo optimization</h5>
+								<p class="services__description" data-aos="zoom-in" data-aos-delay="900">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit nec sagittis sem nibh id elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="skills" class="container container--bg-white">
+				<div class="wrap">
+					<div class="heading-main skills-heading">
+						<h3 class="heading-main__title skills-heading__title" data-aos="fade-right">Expertise skills</h3>
+						<p class="heading-main__description skills-heading__description" data-aos="fade-left" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+					</div>
+					<div class="skills-card" data-aos="flip-left" data-aos-offset="-200">
+						<div class="skills-card__img-wrap" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="-100">
+							<img src="./././assets/images/dist/avatar-main.png" alt="Avatar of this website's creator" class="skills-card__img">
+						</div>
+						<div class="skills-card__info" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="-100">
+							<h5 class="skills-card__profile" data-aos="fade-down" data-aos-delay="600" data-aos-offset="-100">Front-End Developer</h5>
+							<h6 class="skills-card__name" data-aos="fade-up" data-aos-delay="700" data-aos-offset="-100">Stevan Stojić</h6>
+						</div>
+					</div>
+				</div>
+				<div class="expertise" data-aos="zoom-out-up">
+					<div class="wrap wrap--flex-center-all wrap--block">
+						<div class="expertise-info">
+							<h5 class="expertise-info__name" data-aos="fade-up" data-aos-delay="200">Stevan Stojić</h5>
+							<h5 class="expertise-info__profile" data-aos="fade-up" data-aos-delay="300">Front-End Developer</h5>
+							<p class="expertise-info__description" data-aos="fade-up" data-aos-delay="400">Lorem tincidunt placerat ligula sed vestibulum. Phasellus nec enim ac enim congue tincidunt. Curabitur molestie urna justo, quis varius ictum.</p>
+							<div class="social__box expertise-info__social">
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="500" class="social__link expertise-info__link">
+									<span class="icon font-icon-facebook social__icon expertise-info__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="550" class="social__link expertise-info__link">
+									<span class="icon font-icon-twitter social__icon expertise-info__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="600" class="social__link expertise-info__link">
+									<span class="icon font-icon-google social__icon expertise-info__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="650" class="social__link expertise-info__link">
+									<span class="icon font-icon-github social__icon expertise-info__icon"></span>
+								</a>
+							</div>
+						</div>
+						<div class="expertise-level">
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">html</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">90%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-90" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">css/scss</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">75%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-75" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">javascript</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">65%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-65" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">gulp</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">80%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-80" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">react</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">50%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-50" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+							<div class="expertise-level__item">
+								<div class="expertise-level__meta">
+									<h6 class="expertise-level__title" data-aos="fade-right" data-aos-delay="200">photoshop</h6>
+									<h6 class="expertise-level__percentage" data-aos="fade-left" data-aos-delay="200">75%</h6>
+								</div>
+								<div class="expertise-level__line-box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+									<span class="expertise-level__line expertise-level__line--width-75" data-aos="width" data-aos-delay="500" data-aos-easing="ease-in" data-aos-duration="2000"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio" class="container container--bg-white">
+				<div class="wrap wrap--padding-b-60">
+					<div class="heading-main heading-main--margin-b-57">
+						<h3 class="heading-main__title" data-aos="fade-right">Show of my work</h3>
+						<p class="heading-main__description" data-aos="fade-left" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+					</div>
+					<div class="filter">
+						<button class="btn btn--border filter__btn active" data-filter="all" data-aos="fade-down">All items</button>
+						<button class="btn btn--border filter__btn" data-filter="web-design" data-aos="fade-down">Web design</button>
+						<button class="btn btn--border filter__btn" data-filter="print-design" data-aos="fade-down">Print design</button>
+						<button class="btn btn--border filter__btn" data-filter="photography" data-aos="fade-down">Photography</button>
+					</div>
+					<div class="flex-col filter-cards" data-aos="zoom-in" data-aos-duration="1200">
+						<div class="flex-col__item-33 filter-cards__item" data-filter="print-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/des-card.png" alt="Business card design on the table" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Business Card</h5>
+									<h6 class="filter-cards-meta__sub-title">Print Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="web-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/dev-alexis.jpg" alt="Alexis website design template" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Alexis</h5>
+									<h6 class="filter-cards-meta__sub-title">Web Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="print-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/des-resume.png" alt="Resume design on the table" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Resume (CV)</h5>
+									<h6 class="filter-cards-meta__sub-title">Print Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="photography">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/pg-sunset.jpg" alt="Man sitting on the rock in the sea" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Sunset On Sea</h5>
+									<h6 class="filter-cards-meta__sub-title">Photography</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="print-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/des-logo.png" alt="Logo design template" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Cristal Studio</h5>
+									<h6 class="filter-cards-meta__sub-title">Print Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="photography">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/pg-woods.jpg" alt="Woods covered in mist" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Misty Woods</h5>
+									<h6 class="filter-cards-meta__sub-title">Photography</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="web-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/dev-hexagon.jpg" alt="Hexagon website design template" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Hexagon</h5>
+									<h6 class="filter-cards-meta__sub-title">Web Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="photography">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/pg-coffee.jpeg" alt="Serving a cup of coffee" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Coffee Time</h5>
+									<h6 class="filter-cards-meta__sub-title">Photography</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+						<div class="flex-col__item-33 filter-cards__item" data-filter="web-design">
+							<div class="filter-cards__img-wrap">
+								<img src="./././assets/images/dist/dev-healtland.png" alt="Healtland website design template" class="filter-cards__img">
+								<div class="filter-cards__overlay"></div>
+								<button class="filter-cards__btn">
+									<span class="icon font-icon-zoom-in filter-cards__icon"></span>
+								</button>
+							</div>
+							<div class="filter-cards-meta">
+								<div class="filter-cards-meta__heading">
+									<h5 class="filter-cards-meta__title">Healtland</h5>
+									<h6 class="filter-cards-meta__sub-title">Web Design</h6>
+								</div>
+								<button class="filter-cards-meta__btn">
+									<span class="icon font-icon-heart-empty filter-cards-meta__icon filter-cards-meta__icon--empty active"></span>
+									<span class="icon font-icon-heart-filled filter-cards-meta__icon filter-cards-meta__icon--filled"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="slider-theme" class="container cover-bg cover-bg--att-fix container--overlay" style="background-image: url(./././assets/images/dist/slider-bg.jpg);" data-aos="zoom-in">
+				<div class="wrap">
+					<div class="swiper-container slider-theme-container">
+						<div class="swiper-wrapper slider-theme-wrapper">
+							<div class="swiper-slide slider-theme__slide" data-aos="fade" data-aos-delay="300">
+								<a href="javascript:;" target="_blank" class="slider-theme__icon-link">
+									<span class="icon font-icon-twitter slider-theme__icon"></span>
+								</a>
+								<p class="slider-theme__description">Check This Free <a href="javascript:;" class="slider-theme__link">#Single</a>
+									<a href="javascript:;" class="slider-theme__link">#Page</a>
+									<a href="javascript:;" class="slider-theme__link">#XD_Theme</a> “Themify” | Awesome Multipurpose Theme by @stevaricaf On <a href="javascript:;" class="slider-theme__link">#github</a>
+									<a href="javascript:;" class="slider-theme__link">https://stevaricaf.github.io</a>
+								</p>
+							</div>
+							<div class="swiper-slide slider-theme__slide">
+								<a href="javascript:;" target="_blank" class="slider-theme__icon-link">
+									<span class="icon font-icon-twitter slider-theme__icon"></span>
+								</a>
+								<p class="slider-theme__description">Check This Free <a href="javascript:;" class="slider-theme__link">#Single</a>
+									<a href="javascript:;" class="slider-theme__link">#Page</a>
+									<a href="javascript:;" class="slider-theme__link">#XD_Theme</a> “Themify” | Awesome Multipurpose Theme by @stevaricaf On <a href="javascript:;" class="slider-theme__link">#github</a>
+									<a href="javascript:;" class="slider-theme__link">https://stevaricaf.github.io</a>
+								</p>
+							</div>
+							<div class="swiper-slide slider-theme__slide">
+								<a href="javascript:;" target="_blank" class="slider-theme__icon-link">
+									<span class="icon font-icon-twitter slider-theme__icon"></span>
+								</a>
+								<p class="slider-theme__description">Check This Free <a href="javascript:;" class="slider-theme__link">#Single</a>
+									<a href="javascript:;" class="slider-theme__link">#Page</a>
+									<a href="javascript:;" class="slider-theme__link">#XD_Theme</a> “Themify” | Awesome Multipurpose Theme by @stevaricaf On <a href="javascript:;" class="slider-theme__link">#github</a>
+									<a href="javascript:;" class="slider-theme__link">https://stevaricaf.github.io</a>
+								</p>
+							</div>
+							<div class="swiper-slide slider-theme__slide">
+								<a href="javascript:;" target="_blank" class="slider-theme__icon-link">
+									<span class="icon font-icon-twitter slider-theme__icon"></span>
+								</a>
+								<p class="slider-theme__description">Check This Free <a href="javascript:;" class="slider-theme__link">#Single</a>
+									<a href="javascript:;" class="slider-theme__link">#Page</a>
+									<a href="javascript:;" class="slider-theme__link">#XD_Theme</a> “Themify” | Awesome Multipurpose Theme by @stevaricaf On <a href="javascript:;" class="slider-theme__link">#github</a>
+									<a href="javascript:;" class="slider-theme__link">https://stevaricaf.github.io</a>
+								</p>
+							</div>
+						</div>
+						<div class="swiper-pagination slider-theme-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section id="blog" class="container">
+				<div class="wrap">
+					<div class="heading-main heading-main--margin-b-57">
+						<h3 class="heading-main__title" data-aos="fade-right">See our latest blogs</h3>
+						<p class="heading-main__description" data-aos="fade-left" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+					</div>
+					<div class="flex-col blog" data-aos="fade-down">
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/pg-vacation.jpg" alt="Man sitting on the river's bridge" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Going To Vacation</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">May 3rd, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/des-modern.jpg" alt="Augur website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Modern Design</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">April 27th, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-msn.png" alt="Man typing on the keyboard" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Making Something New</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">April 18th, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-alexis.jpg" alt="Alexis website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Developing Alexis</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">April 11th, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-react.jpg" alt="Man sitting on the river's bridge" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">React Library</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">April 1st, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-gulp.png" alt="Augur website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Gulp Starter Kit</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 23rd, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-finish.jpg" alt="Man typing on the keyboard" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Crossing 50th</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 7th, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-intel-vs-ryzen.jpg" alt="Alexis website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">AMD vs Intel - Who's better?</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 1st, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-react.jpg" alt="Man sitting on the river's bridge" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">React Library</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">April 1st, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-gulp.png" alt="Augur website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Gulp Starter Kit</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 23rd, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-finish.jpg" alt="Man typing on the keyboard" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">Crossing 50th</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 7th, 2021.</h6>
+							</div>
+						</div>
+						<div class="flex-col__item-25 blog__item">
+							<div class="blog__img-wrap">
+								<img src="./././assets/images/dist/dev-intel-vs-ryzen.jpg" alt="Alexis website design template" class="blog__img">
+							</div>
+							<div class="blog__main">
+								<a href="javascript:;" class="blog__link">AMD vs Intel - Who's better?</a>
+								<p class="blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it.</p>
+							</div>
+							<div class="blog__footer">
+								<h6 class="blog__author">By <span>Stevan Stojić</span></h6>
+								<h6 class="blog__date">March 1st, 2021.</h6>
+							</div>
+						</div>
+					</div>
+					<div class="blog__btn-wrap" data-aos="fade-up">
+						<button class="btn btn--gray blog__btn blog__btn--show-less">Show less</button>
+						<button class="btn btn--blue blog__btn blog__btn--show-more">Show more</button>
+					</div>
+				</div>
+			</section>
+			<section id="testimonials" class="container cover-bg cover-bg--att-fix container--overlay container--overlay-op-80" style="background-image: url(./././assets/images/dist/testimonials-bg.png)">
+				<div class="wrap wrap--padding-rl-60">
+					<div class="heading-main heading-main--margin-b-57">
+						<h3 class="heading-main__title heading-main__title--white" data-aos="fade-right">What our clients say</h3>
+						<p class="heading-main__description heading-main__description--white" data-aos="fade-left" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+					</div>
+					<div class="swiper-container testimonials__container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+						<div class="swiper-wrapper testimonials__wrapper">
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-1.png" alt="Avatar of Nina Dobrev" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Nina Dobrev</h5>
+											<h6 class="testimonials-social__profile">QuoteTech Zone LLC.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-2.png" alt="Avatar of Lance Jarvis" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Lance Jarvis</h5>
+											<h6 class="testimonials-social__profile">Alexis Inc.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-3.png" alt="Avatar of Joan Stevens" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Joan Stevens</h5>
+											<h6 class="testimonials-social__profile">Healtland Corp.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-4.png" alt="Avatar of Oliver Queen" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Oliver Queen</h5>
+											<h6 class="testimonials-social__profile">QuoteTech Zone LLC.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-3.png" alt="Avatar of Joan Stevens" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Joan Stevens</h5>
+											<h6 class="testimonials-social__profile">Healtland Corp.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide testimonials__slide">
+								<div class="testimonials__item">
+									<div class="testimonials__meta">
+										<span class="icon font-icon-quotation testimonials__icon"></span>
+										<p class="testimonials__description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+									</div>
+									<div class="testimonials-social">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="testimonials__wave-icon">
+											<path fill="#007cc7" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,202.7C640,203,800,181,960,154.7C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+										</svg>
+										<div class="testimonials-social__inner">
+											<div class="testimonials-social__img-wrap">
+												<img src="./././assets/images/dist/avatar-mini-1.png" alt="Avatar of Nina Dobrev" class="testimonials-social__img">
+											</div>
+											<h5 class="testimonials-social__name">Nina Dobrev</h5>
+											<h6 class="testimonials-social__profile">QuoteTech Zone LLC.</h6>
+											<div class="social__box testimonials-social__icon-wrap">
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-facebook social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-twitter social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-google social__icon testimonials-social__icon"></span>
+												</a>
+												<a href="javascript:;" target="_blank" class="social__link testimonials-social__link">
+													<span class="icon font-icon-github social__icon testimonials-social__icon"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination testimonials__pagination" data-aos="fade-up" data-aos-delay="500"></div>
+					</div>
+					<button class="testimonials__btn-prev">
+						<span class="icon font-icon-chevron-left testimonials__btn-icon testimonials__btn-icon--small-left"></span>
+						<span class="icon font-icon-chevron-left testimonials__btn-icon"></span>
+					</button>
+					<button class="testimonials__btn-next">
+						<span class="icon font-icon-chevron-right testimonials__btn-icon testimonials__btn-icon--small-right"></span>
+						<span class="icon font-icon-chevron-right testimonials__btn-icon"></span>
+					</button>
+				</div>
+			</section>
+			<section id="contact" class="container">
+				<div class="wrap">
+					<div class="heading-main heading-main--margin-b-57">
+						<h3 class="heading-main__title" data-aos="fade-right">Get in touch</h3>
+						<p class="heading-main__description" data-aos="fade-left" data-aos-delay="500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+					</div>
+					<div class="contact" data-aos="fade-down">
+						<div class="contact-info" data-aos="fade" data-aos-delay="500">
+							<h5 class="contact-info__title" data-aos="fade-right" data-aos-delay="600">Contact information</h5>
+							<div class="contact-info__data-wrap">
+								<div class="contact-info__data">
+									<span class="icon font-icon-location contact-info__icon" data-aos="fade-right" data-aos-delay="600"></span>
+									<div class="contact-info__meta">
+										<h6 class="contact-info__text" data-aos="fade-right" data-aos-delay="600">360 King Street</h6>
+										<h6 class="contact-info__text" data-aos="fade-right" data-aos-delay="600">Feasterville Trevose, PA 19053</h6>
+									</div>
+								</div>
+								<div class="contact-info__data">
+									<span class="icon font-icon-mobile contact-info__icon" data-aos="fade-right" data-aos-delay="600"></span>
+									<div class="contact-info__meta">
+										<h6 class="contact-info__text" data-aos="fade-right" data-aos-delay="600">(012) 34-567-89-01</h6>
+									</div>
+								</div>
+								<div class="contact-info__data">
+									<span class="icon font-icon-mail contact-info__icon contact-info__icon--mod" data-aos="fade-right" data-aos-delay="600"></span>
+									<div class="contact-info__meta contact-info__meta--mg-left">
+										<h6 class="contact-info__text" data-aos="fade-right" data-aos-delay="600">stojicstevan.info@gmail.com</h6>
+									</div>
+								</div>
+							</div>
+							<div class="social__box contact-social__icon-wrap">
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="600" class="social__link contact-social__link">
+									<span class="icon font-icon-facebook social__icon contact-social__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="650" class="social__link contact-social__link">
+									<span class="icon font-icon-twitter social__icon contact-social__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="700" class="social__link contact-social__link">
+									<span class="icon font-icon-google social__icon contact-social__icon"></span>
+								</a>
+								<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="750" class="social__link contact-social__link">
+									<span class="icon font-icon-github social__icon contact-social__icon"></span>
+								</a>
+							</div>
+						</div>
+						<div class="contact-form" data-aos="zoom-in" data-aos-delay="500">
+							<h5 class="contact-form__title" data-aos="fade-right" data-aos-delay="600">Send us a message</h5>
+							<form action="javascript:;" autocomplete="off" class="form">
+								<div class="form__item" data-aos="zoom-in" data-aos-delay="600">
+									<span class="icon font-icon-user form__icon"></span>
+									<label for="name" class="form__label">Your Name</label>
+									<input type="text" name="name" required class="input form__input">
+								</div>
+								<div class="form__item" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="-100">
+									<span class="icon font-icon-mail form__icon"></span>
+									<label for="email" class="form__label">E-mail</label>
+									<input type="email" name="email" required class="input form__input">
+								</div>
+								<div class="form__item" data-aos="zoom-in" data-aos-delay="800" data-aos-offset="-200">
+									<span class="icon font-icon-mobile form__icon"></span>
+									<label for="phone" class="form__label">Phone</label>
+									<input type="text" name="phone" class="input form__input">
+								</div>
+								<div class="form__item" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="-300">
+									<span class="icon font-icon-briefcase form__icon"></span>
+									<label for="company" class="form__label">Company</label>
+									<input type="text" name="company" class="input form__input">
+								</div>
+								<div class="form__item form__item--full-width form__item--height-auto" data-aos="zoom-in" data-aos-offset="-400" data-aos-delay="1000">
+									<span class="icon font-icon-chat form__icon form__icon--position"></span>
+									<label for="message" class="form__label form__label--position form__label--pos-y">Message</label>
+									<textarea name="message" id="form-message" class="textarea form__textarea"></textarea>
+								</div>
+								<div class="aos-wrap" data-aos="fade-up" data-aos-offset="-400" data-aos-delay="1200">
+									<button type="submit" class="btn btn--blue form__btn">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="footer footer--bg-smoke">
+			<div class="wrap wrap--flex">
+				<div class="footer__item footer__item--logo" data-aos="fade-right">
+					<a href="javascript:;" class="logo">
+						<h4 class="logo__h4">Stiv<span>codes</span></h3>
+					</a>
+				</div>
+				<div class="footer__item" data-aos="fade-right">
+					<h5 class="footer__title" data-aos="fade-right" data-aos-delay="250">About us</h5>
+					<p class="footer__description" data-aos="fade-up" data-aos-delay="300">I am Stevan Stojić, a professional Front-End Developer. I create modern and responsive websites for desktops, tablets and mobiles.</p>
+				</div>
+				<div class="footer__item" data-aos="fade-right">
+					<h5 class="footer__title footer__title--margin-b-sm" data-aos="fade-right" data-aos-delay="250">Recent work</h5>
+					<div class="footer__link-wrap">
+						<a href="javascript:;" class="footer__link-img" data-aos="zoom-in" data-aos-delay="300">
+							<img src="./././assets/images/dist/dev-alexis.jpg" alt="Alexis website template design" class="footer__img">
+						</a>
+						<a href="javascript:;" class="footer__link-img" data-aos="zoom-in" data-aos-delay="350">
+							<img src="./././assets/images/dist/des-card.png" alt="Card design template" class="footer__img">
+						</a>
+						<a href="javascript:;" class="footer__link-img" data-aos="zoom-in" data-aos-delay="400">
+							<img src="./././assets/images/dist/dev-gulp.png" alt="Gulp wallpaper" class="footer__img">
+						</a>
+						<a href="javascript:;" class="footer__link-img" data-aos="zoom-in" data-aos-delay="450">
+							<img src="./././assets/images/dist/dev-hexagon.jpg" alt="Hexagon website template design" class="footer__img">
+						</a>
+					</div>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="500">View more</a>
+				</div>
+				<div class="footer__item footer__item--flex" data-aos="fade-right">
+					<h5 class="footer__title footer__title--margin-b-20" data-aos="fade-right" data-aos-delay="250">Need help?</h5>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="300">Help Center</a>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="350">Terms & Conditions</a>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="400">Author Terms</a>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="450">Premium Licenses</a>
+					<a href="javascript:;" class="footer__link" data-aos="fade-right" data-aos-delay="500">Contact me</a>
+					<div class="social__box footer-social__icon-wrap">
+						<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="500" class="social__link footer-social__link">
+							<span class="icon font-icon-facebook social__icon footer-social__icon"></span>
+						</a>
+						<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="550" class="social__link footer-social__link">
+							<span class="icon font-icon-twitter social__icon footer-social__icon"></span>
+						</a>
+						<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="600" class="social__link footer-social__link">
+							<span class="icon font-icon-google social__icon footer-social__icon"></span>
+						</a>
+						<a href="javascript:;" target="_blank" data-aos="fade-up" data-aos-delay="650" class="social__link footer-social__link">
+							<span class="icon font-icon-github social__icon footer-social__icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<span class="divider" data-aos="width" data-aos-duration="1500"></span>
+				<div class="wrap wrap--padding-20 wrap--flex-sb-center wrap--block">
+					<p class="copyright__description" data-aos="fade-right" data-aos-delay="500">© Copyright 2021 - All Rights Reserved</p>
+					<p class="copyright__description copyright__description--text-right" data-aos="fade-left" data-aos-delay="500">Designed and Developed by <span>Stevan Stojić</span></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
