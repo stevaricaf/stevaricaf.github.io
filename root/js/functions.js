@@ -210,9 +210,7 @@ module.exports = {
     },
 
 	loader: function() {
-		$('.loader').fadeOut('fast', function() {
-			$('.loader').remove();
-		});
+		$('.loader').fadeOut('fast');
 	}
 
 };
