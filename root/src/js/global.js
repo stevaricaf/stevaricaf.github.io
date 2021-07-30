@@ -9991,7 +9991,11 @@
         });
       },
       loader: function loader() {
-        $('.loader').hide();
+        $('.loader').fadeOut('slow');
+        $('body').css('overflow', 'hidden');
+        setTimeout(function () {
+          $('body').css('overflow', 'visible');
+        }, 1000);
       }
     };
   }, {}],
@@ -10025,13 +10029,14 @@
         functions.labelAnimate();
         functions.smoothScroll();
       },
-      winLoad: function winLoad() {}
+      winLoad: function winLoad() {
+        functions.loader();
+      }
     };
     $(function () {
       app.init();
       $(window).on('load', function () {
         app.winLoad();
-        $('.loader').hide();
       });
     });
   }, {

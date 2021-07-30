@@ -35,7 +35,7 @@ let app = {
 	winLoad: function() {
 
 		// Call your functions here
-		// functions.loader();
+		functions.loader();
 		
 	}
 };
@@ -46,7 +46,6 @@ $(function() {
 
 	$(window).on('load', function() {
 		app.winLoad();
-		$('.loader').hide();
 	});
 
 });

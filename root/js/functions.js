@@ -210,7 +210,13 @@ module.exports = {
     },
 
 	loader: function() {
-		$('.loader').hide();
+		$('.loader').fadeOut('slow');
+		$('body').css('overflow', 'hidden');
+
+		setTimeout(function() {
+			$('body').css('overflow', 'visible');
+		}, 1000);
+
 	}
 
 };
