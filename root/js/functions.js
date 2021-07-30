@@ -210,13 +210,10 @@ module.exports = {
     },
 
 	loader: function() {
-		$('.loader').fadeOut('slow');
-		$('body').css('overflow', 'hidden');
-
 		setTimeout(function() {
-			$('body').css('overflow', 'visible');
-		}, 1000);
-
+			$('.loader').fadeOut('slow');
+			$('body').css('overflow', 'hidden');
+		}, 2000);
 	}
 
 };
