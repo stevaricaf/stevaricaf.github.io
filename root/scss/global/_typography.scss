@@ -1,0 +1,62 @@
+// ---------- Typography ---------- //
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $nero;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+h1,
+.h1 {
+    font-size: 60px;
+}
+
+h2,
+.h2 {
+    font-size: 48px;
+}
+
+h3,
+.h3 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+h6,
+.h6 {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $nero;
+    line-height: normal;
+    text-align: left;
+}
+
+.icon {
+    display: inline-block;
+    font-size: 20px;
+    color: $nero;
+    line-height: normal;
+}

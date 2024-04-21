@@ -1,0 +1,73 @@
+{
+  "name": "stevaricaf.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio website that provides professional information about my individual skills and showcase my work",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevaricaf/stevaricaf.github.io.git"
+  },
+  "keywords": [
+    "Front-End",
+    "Web",
+    "Website",
+    "WebApp",
+    "Portfolio",
+    "Design",
+    "Adobe-XD",
+    "Development",
+    "HTML",
+    "CSS",
+    "SASS",
+    "SCSS",
+    "JavaScript",
+    "EcmaScript",
+    "ES6",
+    "jQuery",
+    "Node",
+    "npm",
+    "gulp",
+    "git"
+  ],
+  "author": "Stevan Stojić",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevaricaf/stevaricaf.github.io/issues"
+  },
+  "homepage": "https://github.com/stevaricaf/stevaricaf.github.io#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.4",
+    "browserify": "^17.0.0",
+    "cssnano": "^5.0.7",
+    "dustjs-linkedin": "^2.7.5",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dust-html": "^0.0.6",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-iconfont": "^11.0.0",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "postcss": "^8.3.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "sass": "^1.35.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "sasslintConfig": "sass-lint-config.yml"
+}

@@ -1,0 +1,43 @@
+// ---------- Mixins ---------- //
+
+// To include use @include breakpoint ($value)
+@mixin breakpoint ($value) {
+    @if $value == 'desktop' {
+		@media only screen and (min-width: 1025px) { @content; }
+	} @else if $value == 'touch' {
+		@media only screen and (max-width: 1024px) { @content; }
+    } @else if $value == 'tablet' {
+		@media only screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+	} @else if $value == 'phone' {
+		@media only screen and (max-width: 767px) { @content; }
+	} @else if $value == 'landscape' {
+        @media only screen and (min-width: 568px) and (max-width: 959px) and (orientation: landscape) { @content; }	
+    } @else {
+		@media only screen and (max-width: $value) { @content; }
+	}
+}
+
+// To include use @include align ($position, $direction);
+@mixin align($position: relative, $direction: x) {
+	position: $position;
+	@if ($direction == 'y') {
+		top: 50%;
+		transform: translateY(-50%);
+	} @else if ($direction == 'xy') {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	} @else {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+// To include use @include hover
+@mixin hover {
+	@media only screen and (min-width: 1025px) {
+		.no-touch &:hover {
+			@content;
+		}
+	}
+}

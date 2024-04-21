@@ -1,0 +1,71 @@
+// ---------- Reset ---------- //
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+header, footer, main,
+nav, section, article,
+aside, details, figure,
+figcaption, hgroup {
+    display: block;
+}
+
+// ---------- Link ----------  //
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: none;
+}
+
+// ---------- List ---------- //
+
+ul,
+ol,
+dl {
+    list-style: none;
+    list-style-image: none;
+}
+
+// ---------- Blockqoute ---------- //
+
+blockquote,
+q {
+    quotes: none;
+    &::before,
+    &::after {
+        content: '';
+        content: none;
+    }
+}
+
+// ---------- Form ---------- //
+
+button,
+input,
+textarea {
+	outline: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+button,
+input[type=button] {
+    cursor: pointer;
+}
