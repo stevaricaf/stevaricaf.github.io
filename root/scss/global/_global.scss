@@ -4,7 +4,7 @@ body {
     font-family: $font-default;
     font-size: 14px;
     font-weight: 400;
-    color: $nero;
+    color: $smokeGray;
     line-height: normal;
     letter-spacing: normal;
     background: $smokeWhite;
@@ -13,9 +13,9 @@ body {
 .wrap {
     @extend %clearfix;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 100px 20px;
 }
 
 .container {

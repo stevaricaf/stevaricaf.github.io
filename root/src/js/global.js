@@ -14,7 +14,6 @@
           var a = new Error("Cannot find module '" + i + "'");
           throw a.code = "MODULE_NOT_FOUND", a;
         }
-
         var p = n[i] = {
           exports: {}
         };
@@ -23,17 +22,11 @@
           return o(n || r);
         }, p, p.exports, r, e, n, t);
       }
-
       return n[i].exports;
     }
-
-    for (var u = "function" == typeof require && require, i = 0; i < t.length; i++) {
-      o(t[i]);
-    }
-
+    for (var u = "function" == typeof require && require, i = 0; i < t.length; i++) o(t[i]);
     return o;
   }
-
   return r;
 })()({
   1: [function (require, module, exports) {
@@ -49,7 +42,6 @@
     'use strict';
 
     var functions = require('./functions');
-
     var app = {
       init: function init() {
         if (('ontouchstart' in window || navigator.msMaxTouchPoints > 0) && window.matchMedia('screen and (max-width: 1024px)').matches) {
@@ -57,7 +49,6 @@
         } else {
           $('html').addClass('no-touch');
         }
-
         functions.welcomeMessage();
       }
     };
